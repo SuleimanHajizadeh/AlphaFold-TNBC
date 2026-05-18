@@ -37,7 +37,7 @@ This repository extends transcriptomic TNBC analysis into the **structural biolo
 | Confidence Band | pLDDT | Count | % |
 |----------------|-------|-------|---|
 | 🔵 Very high | ≥ 90 | 72 | **24.7%** |
-| 💙 Confident | 70–90 | 69 | **23.7%** |
+| 🔷 Confident | 70–90 | 69 | **23.7%** |
 | 🟡 Low | 50–70 | 62 | **21.3%** |
 | 🟠 Very low (IDR) | < 50 | 88 | **30.2%** |
 
