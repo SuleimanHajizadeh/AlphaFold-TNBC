@@ -2,19 +2,20 @@
 """
 AKT1 Cα Contact Map
 Author : Suleiman Hajizadeh | IMBB, Azerbaijan
-Input  : data/AKT1_ranked_0.pdb  (PDB 4EJN — 2.20 Å crystal structure)
+Input  : AKT1_TNBC_42642_0/*rank_001*.pdb  (ColabFold v1.6.1 / AlphaFold2)
 Output : figures/AKT1_ContactMap.png
 
 Description:
     Computes the pairwise Euclidean distance matrix between all Cα atoms
-    in chain A and renders a contact map — residues within an 8 Å threshold
-    are marked as "in contact". Contact maps reveal secondary structure
-    topology and long-range tertiary interactions characteristic of the
-    PH, Kinase, and regulatory domains of AKT1.
+    in the top-ranked AlphaFold2 predicted structure and renders a contact
+    map — residues within an 8 Å threshold are marked as "in contact".
+    Contact maps reveal secondary structure topology and long-range tertiary
+    interactions within the predicted AKT1 structure.
 """
 
 import os
 import sys
+import glob
 import warnings
 import numpy as np
 import matplotlib.pyplot as plt
@@ -24,7 +25,8 @@ from Bio import PDB
 warnings.filterwarnings("ignore")
 
 # ── Config ─────────────────────────────────────────────────────────────────
-PDB_FILE    = "data/AKT1_ranked_0.pdb"
+_pdb_hits   = glob.glob("AKT1_TNBC_42642_0/*rank_001*.pdb")
+PDB_FILE    = _pdb_hits[0] if _pdb_hits else "data/AKT1_ranked_0.pdb"
 OUTPUT_FIG  = "figures/AKT1_ContactMap.png"
 CHAIN_ID    = "A"
 THRESHOLD   = 8.0   # Å — standard contact-map cutoff

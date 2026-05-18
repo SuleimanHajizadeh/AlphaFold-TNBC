@@ -1,80 +1,85 @@
-# 🧬 Structural Analysis of TNBC Hub Kinase AKT1
+# 🧬 AlphaFold2 Structural Analysis of TNBC Hub Kinase AKT1
 
-[![PDB](https://img.shields.io/badge/PDB-4EJN-blue?style=flat-square)](https://www.rcsb.org/structure/4EJN)
+[![AlphaFold2](https://img.shields.io/badge/Tool-AlphaFold2_|_ColabFold_v1.6.1-darkblue?style=flat-square)](https://github.com/sokrypton/ColabFold)
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python&logoColor=white)]()
 [![Biopython](https://img.shields.io/badge/Biopython-1.79+-green?style=flat-square)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](https://opensource.org/licenses/MIT)
 
 ## 📌 Overview
 
-This repository extends transcriptomic TNBC analysis into the **structural biology domain**. The 3D crystal structure of **AKT1** — a central hub kinase identified through our co-expression network and PI3K-Akt signalling hyperactivation analysis — is characterized at per-residue resolution using three complementary structural analyses.
+This repository extends transcriptomic TNBC analysis into the **structural biology domain** using deep learning-based protein structure prediction. The 3D structure of **AKT1** — the central hub kinase identified through our co-expression network and PI3K-Akt signalling hyperactivation analysis — is predicted using **AlphaFold2 (ColabFold v1.6.1)** and characterized at per-residue resolution through three complementary structural analyses.
 
-> **AKT1** (*RAC-alpha serine/threonine-protein kinase*, UniProt: [P31749](https://www.uniprot.org/uniprot/P31749)) is a master regulator of cell survival and proliferation. Its hyperactivation is a hallmark of TNBC, driving chemotherapy resistance and tumour progression.
+> **AKT1** (*RAC-alpha serine/threonine-protein kinase*, UniProt: [P31749](https://www.uniprot.org/uniprot/P31749)) is a master regulator of cell survival and proliferation. Its hyperactivation is a hallmark of TNBC, driving chemotherapy resistance and poor prognosis.
 
-**Structure:** [PDB 4EJN](https://www.rcsb.org/structure/4EJN) — Crystal structure of autoinhibited AKT1 in complex with a kinase inhibitor. Resolution: **2.20 Å**.
+**Prediction:** AlphaFold2 via ColabFold v1.6.1 | MMseqs2 MSA | `alphafold2_ptm` model | 5 models generated | top-ranked model used.
 
 ---
 
-## 🔬 Analyses Performed
+## 🔬 Methodology
 
-| Script | Analysis | Output |
-|--------|----------|--------|
-| `analysis.py` | Per-residue B-factor profile with domain annotation | `figures/AKT1_Bfactor.png` |
-| `ramachandran.py` | φ/ψ backbone torsion angles → secondary structure | `figures/AKT1_Ramachandran.png` |
-| `contact_map.py` | Cα pairwise distance matrix → contact topology | `figures/AKT1_ContactMap.png` |
+| Step | Method | Tool |
+|------|--------|------|
+| 1. Sequence input | Canonical AKT1 FASTA (UniProt P31749, 291 aa) | UniProt |
+| 2. MSA generation | MMseqs2 against UniRef + environmental sequences | ColabFold MMseqs2 API |
+| 3. Structure prediction | AlphaFold2-PTM deep learning model | ColabFold v1.6.1 (Google Colab GPU) |
+| 4. pLDDT analysis | Per-residue confidence score extraction from JSON | Python / NumPy |
+| 5. Ramachandran analysis | φ/ψ backbone torsion angle extraction | Biopython `PPBuilder` |
+| 6. Contact map | Cα pairwise distance matrix (8 Å cutoff) | NumPy / Matplotlib |
 
 ---
 
 ## 📊 Results
 
-### 1. B-factor Flexibility Profile
+### 1. pLDDT Confidence Profile (AlphaFold2)
 
-Crystallographic B-factors reveal per-residue thermal motion and structural disorder across the four functional domains of AKT1.
+**pLDDT (Predicted Local Distance Difference Test)** is AlphaFold2's per-residue confidence metric (0–100).
 
-| Region | B-factor | Interpretation |
-|--------|----------|----------------|
-| Rigid (< 20 Å²) | 0.0% | — |
-| Moderate (20–40 Å²) | 15.7% | Well-ordered secondary structure |
-| Flexible (40–60 Å²) | 65.9% | Loop regions, interdomain linkers |
-| Disordered (> 60 Å²) | 18.4% | Regulatory domain, flexible termini |
+| Confidence Band | pLDDT | Count | % |
+|----------------|-------|-------|---|
+| 🔵 Very high | ≥ 90 | 72 | **24.7%** |
+| 🩵 Confident | 70–90 | 69 | **23.7%** |
+| 🟡 Low | 50–70 | 62 | **21.3%** |
+| 🟠 Very low (IDR) | < 50 | 88 | **30.2%** |
 
-![B-factor Plot](figures/AKT1_Bfactor.png)
+**Overall mean pLDDT: 65.61 | pTM score: 0.450**
 
-> **Key finding:** 84.3% of AKT1 residues exhibit high flexibility (B > 40 Å²), consistent with the known conformational dynamics of the regulatory domain that underlie allosteric activation in cancer cells.
+![pLDDT Plot](figures/AKT1_pLDDT.png)
+
+> **Structural insight:** 30.2% of AKT1 residues are predicted as intrinsically disordered (pLDDT < 50), consistent with the known flexibility of the N-terminal PH domain linker and C-terminal regulatory tail — regions critical for membrane recruitment and allosteric regulation in TNBC cells.
 
 ---
 
 ### 2. Ramachandran Backbone Analysis
 
-φ/ψ torsion angles for all 366 non-terminal residues reveal the secondary structure composition of AKT1.
+φ/ψ torsion angles for all 289 non-terminal residues reveal the predicted secondary structure composition.
 
 | Region | Count | Percentage |
 |--------|-------|------------|
-| α-helix favoured | 135 | **36.9%** |
-| β-strand favoured | 121 | **33.1%** |
-| Left-handed (Gly) | 8 | 2.2% |
-| Other allowed | 102 | 27.9% |
+| α-helix favoured | 71 | **24.6%** |
+| β-strand favoured | 95 | **32.9%** |
+| Left-handed (Gly) | 9 | 3.1% |
+| Other allowed | 114 | **39.4%** |
 
 ![Ramachandran Plot](figures/AKT1_Ramachandran.png)
 
-> **Key finding:** AKT1 has a mixed α/β fold (36.9% helix, 33.1% strand), characteristic of bilobal kinase architecture. The high proportion of "other allowed" residues (27.9%) reflects the extensive loop regions mediating substrate binding and allosteric communication.
+> **Structural insight:** The high proportion of "other allowed" residues (39.4%) reflects the extensive loop regions in the predicted AKT1 model — consistent with the high proportion of low-confidence IDR regions identified by pLDDT.
 
 ---
 
 ### 3. Cα Contact Map
 
-Pairwise residue contacts (threshold: 8 Å) reveal the topological organisation of AKT1 domains and long-range tertiary interactions.
+Pairwise residue contacts (threshold: 8 Å) reveal the topological organisation of the predicted AKT1 structure.
 
 | Metric | Value |
 |--------|-------|
-| Residues analysed | 376 |
-| Contact pairs detected | 1,017 (1.4% of all pairs) |
-| Min Cα–Cα distance | 2.94 Å |
-| Max Cα–Cα distance | 63.88 Å |
+| Residues analysed | 291 |
+| Contact pairs detected | 573 (1.4% of all pairs) |
+| Min Cα–Cα distance | 3.02 Å |
+| Max Cα–Cα distance | 76.69 Å |
 
 ![Contact Map](figures/AKT1_ContactMap.png)
 
-> **Key finding:** The block-diagonal pattern confirms three distinct structural domains (PH, Kinase, HM). Off-diagonal contacts between the PH domain (residues 1–107) and the kinase domain (153–408) are sparse, consistent with AKT1's autoinhibited conformation captured in this crystal structure.
+> **Structural insight:** The block-diagonal pattern confirms distinct domain clustering in the predicted structure. The sparse off-diagonal contacts between N- and C-terminal regions are consistent with the open/extended conformation predicted for the unrelaxed model.
 
 ---
 
@@ -82,16 +87,22 @@ Pairwise residue contacts (threshold: 8 Å) reveal the topological organisation 
 
 ```
 AlphaFold-TNBC/
+├── AKT1_TNBC_42642_0/                     ← ColabFold v1.6.1 full output
+│   ├── *_unrelaxed_rank_001_*.pdb          ← Top-ranked predicted structure
+│   ├── *_scores_rank_001_*.json            ← pLDDT + pTM scores
+│   ├── *_plddt.png                         ← ColabFold native pLDDT plot
+│   ├── *_pae.png                           ← Predicted Aligned Error (PAE)
+│   ├── *_coverage.png                      ← MSA coverage plot
+│   └── *.a3m                               ← Multiple Sequence Alignment
 ├── data/
-│   ├── AKT1_P31749.fasta      ← Canonical AKT1 sequence (UniProt P31749)
-│   └── AKT1_ranked_0.pdb      ← Crystal structure (RCSB PDB: 4EJN, 2.20 Å)
+│   └── AKT1_P31749.fasta                   ← Input sequence (UniProt P31749)
 ├── figures/
-│   ├── AKT1_Bfactor.png       ← B-factor domain profile
-│   ├── AKT1_Ramachandran.png  ← φ/ψ torsion angle diagram
-│   └── AKT1_ContactMap.png    ← Cα pairwise contact map
-├── analysis.py                ← B-factor extraction and visualization
-├── ramachandran.py            ← Backbone torsion angle analysis
-├── contact_map.py             ← Cα distance matrix and contact map
+│   ├── AKT1_pLDDT.png                      ← Per-residue confidence (custom)
+│   ├── AKT1_Ramachandran.png               ← φ/ψ torsion diagram
+│   └── AKT1_ContactMap.png                 ← Cα contact map
+├── analysis.py                             ← pLDDT extraction & visualization
+├── ramachandran.py                         ← Backbone torsion angle analysis
+├── contact_map.py                          ← Cα distance matrix & contact map
 └── README.md
 ```
 
@@ -100,14 +111,19 @@ AlphaFold-TNBC/
 ## ⚙️ Reproduce
 
 ```bash
-# Install dependencies
+# 1. Install dependencies
 pip install biopython matplotlib numpy
 
-# Run all analyses
-python analysis.py        # B-factor profile
-python ramachandran.py    # Ramachandran plot
-python contact_map.py     # Contact map
+# 2. Run all analyses
+python analysis.py       # pLDDT confidence profile
+python ramachandran.py   # Ramachandran plot
+python contact_map.py    # Contact map
 ```
+
+To regenerate the AlphaFold2 prediction:
+1. Open [ColabFold](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb)
+2. Paste the sequence from `data/AKT1_P31749.fasta`
+3. Runtime → Run all
 
 ---
 
@@ -115,8 +131,11 @@ python contact_map.py     # Contact map
 
 This structural analysis directly complements the RNA-seq findings in the [Bioinformatics-analysis](https://github.com/SuleimanHajizadeh/Bioinformatics-analysis) repository:
 
-- **Transcriptomic level:** AKT1 identified as a hub gene upregulated in TNBC via PI3K-Akt network hyperactivation
-- **Structural level:** Crystal structure reveals the autoinhibited conformation and the high conformational flexibility of the regulatory HM domain — the mechanistic basis for its oncogenic activation
+| Level | Finding |
+|-------|---------|
+| **Transcriptomic** | AKT1 upregulated as PI3K-Akt hub gene in TNBC |
+| **Network** | AKT1 identified as top hub in co-expression network |
+| **Structural** | AlphaFold2 reveals 30.2% IDR — mechanistic basis for allosteric activation |
 
 ---
 
@@ -125,13 +144,9 @@ This structural analysis directly complements the RNA-seq findings in the [Bioin
 This project demonstrates a complete **multi-scale biological analysis pipeline**:
 
 ```
-RNA-seq DESeq2  →  Co-expression Network  →  3D Crystal Structure
-(gene level)        (systems level)           (atomic level)
+RNA-seq DESeq2  →  Co-expression Network  →  AlphaFold2 Structure Prediction
+(gene level)        (systems level)           (atomic level / AI-predicted)
 ```
 
-Covering the full chain from gene expression to protein structural dynamics — a level of analytical depth characteristic of graduate-level computational biology research.
-
----
-
-**Author:** Suleiman Hajizadeh | Bioinformatician @ IMBB, Azerbaijan  
+**Author:** Suleiman Hajizadeh | Bioinformatician @ IMBB, Azerbaijan
 📧 suleyman.hacizade1@gmail.com

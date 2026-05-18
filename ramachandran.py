@@ -2,14 +2,15 @@
 """
 AKT1 Ramachandran Plot
 Author : Suleiman Hajizadeh | IMBB, Azerbaijan
-Input  : data/AKT1_ranked_0.pdb  (PDB 4EJN — 2.20 Å crystal structure)
+Input  : AKT1_TNBC_42642_0/*rank_001*.pdb  (ColabFold v1.6.1 / AlphaFold2)
 Output : figures/AKT1_Ramachandran.png
 
 Description:
-    Extracts backbone torsion angles (φ phi, ψ psi) from Cα coordinates
-    using Biopython and plots a Ramachandran diagram to characterise the
-    secondary structure composition of AKT1. Favoured regions (α-helix,
-    β-sheet) are highlighted using standard Ramachandran boundaries.
+    Extracts backbone torsion angles (φ phi, ψ psi) from the AlphaFold2
+    top-ranked predicted structure using Biopython and plots a Ramachandran
+    diagram to characterise secondary structure composition of AKT1.
+    Favoured regions (α-helix, β-sheet) are highlighted using standard
+    Ramachandran boundaries.
 """
 
 import os
@@ -24,7 +25,9 @@ from Bio.PDB.Polypeptide import PPBuilder
 warnings.filterwarnings("ignore")
 
 # ── Config ─────────────────────────────────────────────────────────────────
-PDB_FILE   = "data/AKT1_ranked_0.pdb"
+import glob as _glob
+_pdb_hits = _glob.glob("AKT1_TNBC_42642_0/*rank_001*.pdb")
+PDB_FILE   = _pdb_hits[0] if _pdb_hits else "data/AKT1_ranked_0.pdb"
 OUTPUT_FIG = "figures/AKT1_Ramachandran.png"
 CHAIN_ID   = "A"
 
@@ -99,7 +102,7 @@ def plot_ramachandran(phi, psi, colours, out_path):
     ax.set_ylim(-180, 180)
     ax.set_xlabel("φ (phi) angle  [degrees]", fontsize=12)
     ax.set_ylabel("ψ (psi) angle  [degrees]", fontsize=12)
-    ax.set_title("Ramachandran Plot — AKT1 (PDB: 4EJN, 2.20 Å)\n"
+    ax.set_title("Ramachandran Plot — AKT1 (ColabFold v1.6.1 / AlphaFold2)\n"
                  "Backbone torsion angles coloured by secondary-structure region",
                  fontsize=11)
     ax.tick_params(labelsize=10)
@@ -115,7 +118,7 @@ def print_summary(phi, psi):
     left  = sum(1 for ph, ps in zip(phi, psi) if 0<=ph<=90 and 0<=ps<=90)
     other = total - alpha - beta - left
     print(f"\n{'='*46}")
-    print(f"  AKT1 Ramachandran Analysis — PDB 4EJN")
+    print(f"  AKT1 Ramachandran Analysis — AlphaFold2")
     print(f"{'='*46}")
     print(f"  Total residues with φ/ψ : {total}")
     print(f"  α-helix favoured        : {alpha:3d}  ({alpha/total*100:.1f}%)")
