@@ -106,22 +106,27 @@ Colour spectrum from blue (very high confidence, pLDDT ≥ 90) to red (very low,
 
 ```
 AlphaFold-TNBC/
-├── AKT1_TNBC_42642_0/                     ← ColabFold v1.6.1 full output
-│   ├── *_unrelaxed_rank_001_*.pdb          ← Top-ranked predicted structure
-│   ├── *_scores_rank_001_*.json            ← pLDDT + pTM scores
-│   ├── *_plddt.png                         ← ColabFold native pLDDT plot
-│   ├── *_pae.png                           ← Predicted Aligned Error (PAE)
-│   ├── *_coverage.png                      ← MSA coverage plot
-│   └── *.a3m                               ← Multiple Sequence Alignment
+├── AKT1_TNBC_42642_0/                        ← ColabFold v1.6.1 full output
+│   ├── *_unrelaxed_rank_001_*.pdb             ← Top-ranked predicted structure
+│   ├── *_scores_rank_001_*.json               ← pLDDT + pTM scores per residue
+│   ├── *_plddt.png                            ← ColabFold native pLDDT plot
+│   ├── *_pae.png                              ← Predicted Aligned Error (PAE)
+│   ├── *_coverage.png                         ← MSA depth coverage plot
+│   └── *.a3m                                  ← Multiple Sequence Alignment
 ├── data/
-│   └── AKT1_P31749.fasta                   ← Input sequence (UniProt P31749)
+│   └── AKT1_P31749.fasta                      ← Input sequence (UniProt P31749, 291 aa)
 ├── figures/
-│   ├── AKT1_pLDDT.png                      ← Per-residue confidence (custom)
-│   ├── AKT1_Ramachandran.png               ← φ/ψ torsion diagram
-│   └── AKT1_ContactMap.png                 ← Cα contact map
-├── analysis.py                             ← pLDDT extraction & visualization
-├── ramachandran.py                         ← Backbone torsion angle analysis
-├── contact_map.py                          ← Cα distance matrix & contact map
+│   ├── AKT1_pLDDT.png                         ← Per-residue pLDDT confidence plot
+│   ├── AKT1_Ramachandran.png                  ← φ/ψ backbone torsion diagram
+│   ├── AKT1_ContactMap.png                    ← Cα pairwise contact map
+│   ├── AKT1_pLDDT_3D.png                      ← PyMOL 3D: pLDDT colour spectrum
+│   ├── AKT1_cartoon_3D.png                    ← PyMOL 3D: cartoon backbone
+│   └── AKT1_surface_3D.png                    ← PyMOL 3D: molecular surface
+├── AlphaFold2.ipynb                           ← ColabFold notebook (run on Google Colab)
+├── analysis.py                                ← pLDDT extraction & visualization
+├── ramachandran.py                            ← Backbone torsion angle analysis
+├── contact_map.py                             ← Cα distance matrix & contact map
+├── visualize_AKT1.py                          ← PyMOL 3D render script
 └── README.md
 ```
 
@@ -133,16 +138,20 @@ AlphaFold-TNBC/
 # 1. Install dependencies
 pip install biopython matplotlib numpy
 
-# 2. Run all analyses
+# 2. Run all analyses (locally or on server)
 python analysis.py       # pLDDT confidence profile
 python ramachandran.py   # Ramachandran plot
 python contact_map.py    # Contact map
+
+# 3. Generate PyMOL 3D renders (requires PyMOL)
+pymol -c visualize_AKT1.py
 ```
 
-To regenerate the AlphaFold2 prediction:
-1. Open [ColabFold](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb)
-2. Paste the sequence from `data/AKT1_P31749.fasta`
-3. Runtime → Run all
+To regenerate the AlphaFold2 prediction from scratch:
+1. Open `AlphaFold2.ipynb` in [Google Colab](https://colab.research.google.com)
+2. Set runtime to GPU: **Runtime → Change runtime type → T4 GPU**
+3. Paste the sequence from `data/AKT1_P31749.fasta` into `query_sequence`
+4. **Runtime → Run all**
 
 ---
 
