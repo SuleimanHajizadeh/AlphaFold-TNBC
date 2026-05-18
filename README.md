@@ -83,6 +83,25 @@ Pairwise residue contacts (threshold: 8 Å) reveal the topological organisation 
 
 ---
 
+### 4. PyMOL 3D Structural Renders
+
+Publication-ready 3D visualizations generated with **PyMOL 3.1.6** from the top-ranked AlphaFold2 model.
+
+#### pLDDT Confidence Spectrum
+Colour spectrum from blue (very high confidence, pLDDT ≥ 90) to red (very low, pLDDT < 50) mapped onto the 3D cartoon backbone.
+
+![pLDDT 3D](figures/AKT1_pLDDT_3D.png)
+
+#### Cartoon Backbone View
+
+![Cartoon 3D](figures/AKT1_cartoon_3D.png)
+
+#### Molecular Surface
+
+![Surface 3D](figures/AKT1_surface_3D.png)
+
+---
+
 ## 🗂️ Repository Structure
 
 ```
