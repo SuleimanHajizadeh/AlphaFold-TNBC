@@ -1,0 +1,1 @@
+"biopython>=1.81\nmatplotlib>=3.7.0\nnumpy>=1.22.0\n"
