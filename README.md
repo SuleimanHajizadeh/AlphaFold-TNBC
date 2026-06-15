@@ -188,6 +188,14 @@ python3 ramachandran.py   # Computes backbone torsion angle vectors
 python3 contact_map.py    # Computes pairwise Cα distance matrix
 ```
 
+### 🧪 Automated Unit Testing
+The JSON scoring parsing and confidence mapping logic are verified using the unittest framework:
+*   **Test Suite:** [`test_analysis.py`](file:///home/suleimanhajizadeh/Documents/GitHub/AlphaFold-TNBC/test_analysis.py)
+*   **Execution Command:**
+    ```bash
+    python3 -m unittest test_analysis.py
+    ```
+
 ### 3. Generate PyMOL 3D Renders (requires PyMOL)
 ```bash
 pymol -c visualize_AKT1.py
