@@ -14,7 +14,7 @@ This repository serves as a centralized laboratory platform showcasing advanced 
 
 | Project Name | 📁 Directory Path | 🔬 Key Methods & Technologies | 🔗 Details |
 |--------------|-------------------|-------------------------------|------------|
-| **AKT1 Kinase Structural Modeling** | [`/projects/akt1-kinase-modeling`](./projects/akt1-kinase-modeling) | AlphaFold2, pLDDT & PAE matrices, Ramachandran dihedral torsion vectors, $C_lpha$ contact maps | [README](./projects/akt1-kinase-modeling/README.md) |
+| **AKT1 Kinase Structural Modeling** | [`/projects/akt1-kinase-modeling`](./projects/akt1-kinase-modeling) | AlphaFold2, pLDDT & PAE matrices, Ramachandran dihedral torsion vectors, $C_\alpha$ contact maps | [README](./projects/akt1-kinase-modeling/README.md) |
 | **STN7/STN8 Chloroplast Kinase Docking** | [`/projects/stn7-stn8-docking`](./projects/stn7-stn8-docking) | Receptor preparation, signal transit peptide truncation, AutoDock Vina, grid box auto-parameterization | [README](./projects/stn7-stn8-docking/README.md) |
 
 ---
