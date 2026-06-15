@@ -1,0 +1,1056 @@
+{
+  "protein": "STN8",
+  "uniprot_id": "Q9LZV4",
+  "pdb_source": "Q9LZV4_AlphaFold.pdb",
+  "global_stats": {
+    "total_residues": 495,
+    "global_mean_plddt": 75.46,
+    "global_std_plddt": 22.38,
+    "very_high_pct": 39.2,
+    "high_pct": 29.3,
+    "low_pct": 16.0,
+    "very_low_pct": 15.6
+  },
+  "domain_boundaries": {
+    "transit_peptide": [
+      1,
+      59
+    ],
+    "transmembrane_anchor": [
+      60,
+      95
+    ],
+    "kinase_domain": [
+      96,
+      390
+    ],
+    "activation_loop": [
+      261,
+      290
+    ],
+    "c_terminal_tail": [
+      391,
+      517
+    ]
+  },
+  "domain_plddt_stats": {
+    "transit_peptide": {
+      "n_residues": 59,
+      "mean_plddt": 29.59,
+      "std_plddt": 4.04,
+      "confidence_tier": "Very Low (<50)"
+    },
+    "transmembrane_anchor": {
+      "n_residues": 36,
+      "mean_plddt": 69.25,
+      "std_plddt": 14.57,
+      "confidence_tier": "Low (50-70)"
+    },
+    "kinase_domain": {
+      "n_residues": 265,
+      "mean_plddt": 80.8,
+      "std_plddt": 13.99,
+      "confidence_tier": "High (70-90)"
+    },
+    "activation_loop": {
+      "n_residues": 30,
+      "mean_plddt": 92.05,
+      "std_plddt": 4.28,
+      "confidence_tier": "Very High (>90)"
+    },
+    "c_terminal_tail": {
+      "n_residues": 105,
+      "mean_plddt": 85.14,
+      "std_plddt": 18.42,
+      "confidence_tier": "High (70-90)"
+    }
+  },
+  "secondary_structure_per_domain": {
+    "transit_peptide": {
+      "helix": 0,
+      "strand": 30
+    },
+    "transmembrane_anchor": {
+      "helix": 26,
+      "strand": 2
+    },
+    "kinase_domain": {
+      "helix": 95,
+      "strand": 83
+    },
+    "activation_loop": {
+      "helix": 19,
+      "strand": 3
+    },
+    "c_terminal_tail": {
+      "helix": 57,
+      "strand": 14
+    },
+    "unassigned": {
+      "helix": 0,
+      "strand": 0
+    }
+  },
+  "catalytic_motifs": {
+    "P_loop_GxGxxG": {
+      "residues": "112-118",
+      "sequence": "LLAPLQL",
+      "mean_plddt": 80.15,
+      "domain": "kinase_domain",
+      "confidence_tier": "High (70-90)"
+    },
+    "HxD_catalytic": {
+      "residues": "208-210",
+      "sequence": "RLS",
+      "mean_plddt": 90.77,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)"
+    },
+    "DFG_motif": {
+      "residues": "264-266",
+      "sequence": "ESI",
+      "mean_plddt": 92.4,
+      "domain": "activation_loop",
+      "confidence_tier": "Very High (>90)"
+    },
+    "APE_motif": {
+      "residues": "289-291",
+      "sequence": "MRQ",
+      "mean_plddt": 97.79,
+      "domain": "activation_loop",
+      "confidence_tier": "Very High (>90)"
+    }
+  },
+  "phospho_sites_count": 83,
+  "top_phospho_sites": [
+    {
+      "res_num": 295,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 98.12,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 294,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 97.68999999999998,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 253,
+      "res_name": "TYR",
+      "one_letter": "Y",
+      "plddt": 97.5,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 391,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 97.12,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 438,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 96.31,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 452,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 95.81000000000002,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 390,
+      "res_name": "TYR",
+      "one_letter": "Y",
+      "plddt": 95.75,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 261,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 95.62,
+      "domain": "activation_loop",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 403,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 95.38,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 476,
+      "res_name": "TYR",
+      "one_letter": "Y",
+      "plddt": 95.19000000000001,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 258,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 94.94,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 317,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 94.93999999999998,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 406,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 94.81,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 350,
+      "res_name": "TYR",
+      "one_letter": "Y",
+      "plddt": 94.30999999999999,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 216,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 94.25,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 467,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 94.12,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 431,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 94.06000000000002,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 407,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 93.93999999999998,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 419,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 93.69,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 148,
+      "res_name": "TYR",
+      "one_letter": "Y",
+      "plddt": 93.5,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    }
+  ],
+  "all_phospho_sites": [
+    {
+      "res_num": 3,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 29.360000000000003,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 6,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 30.84,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 9,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 29.22,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 11,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 29.949999999999996,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 13,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 31.17000000000001,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 14,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 29.77,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 19,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 28.360000000000003,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 21,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 29.110000000000003,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 22,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 32.31,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 26,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 30.03,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 27,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 24.419999999999998,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 29,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 25.75,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 32,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 26.73,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 33,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 24.56,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 36,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 29.670000000000005,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 37,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 27.639999999999997,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 39,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 27.389999999999997,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 42,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 28.02,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 51,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 29.7,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 53,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 30.110000000000003,
+      "domain": "transit_peptide",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 61,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 46.72,
+      "domain": "transmembrane_anchor",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 63,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 48.5,
+      "domain": "transmembrane_anchor",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 74,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 65.12,
+      "domain": "transmembrane_anchor",
+      "confidence_tier": "Low (50-70)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 77,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 77.38,
+      "domain": "transmembrane_anchor",
+      "confidence_tier": "High (70-90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 79,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 80.69,
+      "domain": "transmembrane_anchor",
+      "confidence_tier": "High (70-90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 81,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 81.5,
+      "domain": "transmembrane_anchor",
+      "confidence_tier": "High (70-90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 89,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 82.38,
+      "domain": "transmembrane_anchor",
+      "confidence_tier": "High (70-90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 96,
+      "res_name": "TYR",
+      "one_letter": "Y",
+      "plddt": 75.69000000000001,
+      "domain": "kinase_domain",
+      "confidence_tier": "High (70-90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 98,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 71.81,
+      "domain": "kinase_domain",
+      "confidence_tier": "High (70-90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 111,
+      "res_name": "TYR",
+      "one_letter": "Y",
+      "plddt": 75.38,
+      "domain": "kinase_domain",
+      "confidence_tier": "High (70-90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 122,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 65.62,
+      "domain": "kinase_domain",
+      "confidence_tier": "Low (50-70)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 131,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 81.44,
+      "domain": "kinase_domain",
+      "confidence_tier": "High (70-90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 136,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 84.75,
+      "domain": "kinase_domain",
+      "confidence_tier": "High (70-90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 143,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 76.06,
+      "domain": "kinase_domain",
+      "confidence_tier": "High (70-90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 148,
+      "res_name": "TYR",
+      "one_letter": "Y",
+      "plddt": 93.5,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 157,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 61.84000000000001,
+      "domain": "kinase_domain",
+      "confidence_tier": "Low (50-70)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 158,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 53.72000000000001,
+      "domain": "kinase_domain",
+      "confidence_tier": "Low (50-70)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 166,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 55.62,
+      "domain": "kinase_domain",
+      "confidence_tier": "Low (50-70)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 176,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 50.78000000000001,
+      "domain": "kinase_domain",
+      "confidence_tier": "Low (50-70)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 201,
+      "res_name": "TYR",
+      "one_letter": "Y",
+      "plddt": 86.19000000000001,
+      "domain": "kinase_domain",
+      "confidence_tier": "High (70-90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 207,
+      "res_name": "TYR",
+      "one_letter": "Y",
+      "plddt": 91.19000000000001,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 210,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 91.12,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 216,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 94.25,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 223,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 92.25,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 229,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 83.88,
+      "domain": "kinase_domain",
+      "confidence_tier": "High (70-90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 231,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 77.18999999999998,
+      "domain": "kinase_domain",
+      "confidence_tier": "High (70-90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 234,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 83.0,
+      "domain": "kinase_domain",
+      "confidence_tier": "High (70-90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 253,
+      "res_name": "TYR",
+      "one_letter": "Y",
+      "plddt": 97.5,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 258,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 94.94,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 261,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 95.62,
+      "domain": "activation_loop",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 265,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 92.38,
+      "domain": "activation_loop",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 277,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 90.56,
+      "domain": "activation_loop",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 294,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 97.68999999999998,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 295,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 98.12,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 302,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 86.88,
+      "domain": "kinase_domain",
+      "confidence_tier": "High (70-90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 317,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 94.93999999999998,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 339,
+      "res_name": "TYR",
+      "one_letter": "Y",
+      "plddt": 65.94000000000001,
+      "domain": "kinase_domain",
+      "confidence_tier": "Low (50-70)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 344,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 54.5,
+      "domain": "kinase_domain",
+      "confidence_tier": "Low (50-70)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 350,
+      "res_name": "TYR",
+      "one_letter": "Y",
+      "plddt": 94.30999999999999,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 356,
+      "res_name": "TYR",
+      "one_letter": "Y",
+      "plddt": 65.44000000000001,
+      "domain": "kinase_domain",
+      "confidence_tier": "Low (50-70)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 362,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 54.12,
+      "domain": "kinase_domain",
+      "confidence_tier": "Low (50-70)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 364,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 60.40999999999999,
+      "domain": "kinase_domain",
+      "confidence_tier": "Low (50-70)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 375,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 76.75,
+      "domain": "kinase_domain",
+      "confidence_tier": "High (70-90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 383,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 86.69,
+      "domain": "kinase_domain",
+      "confidence_tier": "High (70-90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 390,
+      "res_name": "TYR",
+      "one_letter": "Y",
+      "plddt": 95.75,
+      "domain": "kinase_domain",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 391,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 97.12,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 403,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 95.38,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 406,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 94.81,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 407,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 93.93999999999998,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 419,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 93.69,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 422,
+      "res_name": "TYR",
+      "one_letter": "Y",
+      "plddt": 91.62,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 431,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 94.06000000000002,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 433,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 89.88,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "High (70-90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 438,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 96.31,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 444,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 92.69,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 452,
+      "res_name": "THR",
+      "one_letter": "T",
+      "plddt": 95.81000000000002,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 456,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 86.81,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "High (70-90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 460,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 55.12,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Low (50-70)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 467,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 94.12,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 476,
+      "res_name": "TYR",
+      "one_letter": "Y",
+      "plddt": 95.19000000000001,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very High (>90)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 489,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 52.69,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Low (50-70)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 492,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 50.47,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Low (50-70)",
+      "surface_exposure": "buried"
+    },
+    {
+      "res_num": 494,
+      "res_name": "SER",
+      "one_letter": "S",
+      "plddt": 36.34,
+      "domain": "c_terminal_tail",
+      "confidence_tier": "Very Low (<50)",
+      "surface_exposure": "buried"
+    }
+  ]
+}

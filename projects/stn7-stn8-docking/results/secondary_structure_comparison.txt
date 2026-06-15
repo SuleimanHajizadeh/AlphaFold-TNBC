@@ -1,0 +1,29 @@
+=================================================================
+STN7 vs STN8 Secondary Structure Composition Report
+Calculated using Ramachandran dihedral angles (phi/psi)
+=================================================================
+
+--- STN7 Full-Length ---
+  Total residues analyzed: 562
+  Helix   : 326  (58.01%)
+  Sheet   : 171  (30.43%)
+  Coil    : 65   (11.57%)
+
+--- STN7 Kinase Domain ---
+  Total residues analyzed: 319
+  Helix   : 187  (58.62%)
+  Sheet   : 100  (31.35%)
+  Coil    : 32   (10.03%)
+
+--- STN8 Full-Length ---
+  Total residues analyzed: 495
+  Helix   : 258  (52.12%)
+  Sheet   : 167  (33.74%)
+  Coil    : 70   (14.14%)
+
+--- STN8 Kinase Domain ---
+  Total residues analyzed: 345
+  Helix   : 183  (53.04%)
+  Sheet   : 119  (34.49%)
+  Coil    : 43   (12.46%)
+

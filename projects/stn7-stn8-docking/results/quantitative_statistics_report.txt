@@ -1,0 +1,26 @@
+====================================================
+QUANTITATIVE STATISTICAL ANALYSIS REPORT
+====================================================
+
+1. MULTIPLE SEQUENCE ALIGNMENT CONSERVATION
+  Alignment Length: 1089 columns
+  Mean Shannon Entropy (H): 0.5248
+  Median Shannon Entropy (H): 0.0000
+  Perfectly Conserved Columns (H=0): 621 (57.02%)
+
+2. STRUCURAL CONFIDENCE (t-test on pLDDT)
+  STN7 Stromal Kinase vs Non-Kinase Domains:
+    Kinase Mean pLDDT: 84.46
+    Non-Kinase Mean pLDDT: 50.96
+    t-statistic: 29.3206
+    p-value: 1.9629e-102 (Highly Significant)
+  STN8 Stromal Kinase vs Non-Kinase Domains:
+    Kinase Mean pLDDT: 85.45
+    Non-Kinase Mean pLDDT: 52.48
+    t-statistic: 17.2145
+    p-value: 1.6484e-41 (Highly Significant)
+
+3. HYDROPHOBICITY PROFILE CORRELATION
+  Pearson Correlation on Interpolated Kyte-Doolittle Profiles:
+    Correlation coefficient r: 0.2039
+    p-value: 4.1899e-02 (Significant)

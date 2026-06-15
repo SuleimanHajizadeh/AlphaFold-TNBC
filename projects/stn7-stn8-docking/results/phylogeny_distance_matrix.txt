@@ -1,0 +1,9 @@
+STN7:Arabidopsis_thaliana_Q9S713    0.000000
+STN7:Oryza_sativa_B9FLG7    0.191119    0.000000
+STN7:Zea_mays_A0A3L6E9I0    0.194631    0.119616    0.000000
+STN7:Chlamydomonas_reinhardtii_Q84V18   0.468632    0.527960    0.533205    0.000000
+STN8:Arabidopsis_thaliana_Q9LZV4    0.486957    0.541725    0.557228    0.579627    0.000000
+STN8:Oryza_sativa_B7E5Q2    0.397841    0.439086    0.442470    0.546848    0.214050    0.000000
+STN8:Zea_mays_A0A3L6ED31    0.456473    0.539828    0.553776    0.547388    0.373152    0.119155    0.000000
+STN8:Chlamydomonas_reinhardtii_Q84V17   0.537897    0.611591    0.618593    0.697048    0.622404    0.506122    0.656051    0.000000
+    STN7:Arabidopsis_thaliana_Q9S713    STN7:Oryza_sativa_B9FLG7    STN7:Zea_mays_A0A3L6E9I0    STN7:Chlamydomonas_reinhardtii_Q84V18   STN8:Arabidopsis_thaliana_Q9LZV4    STN8:Oryza_sativa_B7E5Q2    STN8:Zea_mays_A0A3L6ED31    STN8:Chlamydomonas_reinhardtii_Q84V17

@@ -1,0 +1,8 @@
+Name	PubChem_CID	MW	Description	PDBQT_ready
+ATP	5957	507.18	Kinazların təbii substratı — fosfat donor	YES
+ADP	644208	427.2	ATP fosforilləşmə məhsulu	YES
+Staurosporine	44259	466.53	Geniş spektrli Ser/Thr kinaz inhibitoru — pozitiv kontrol	YES
+K252a	3084981	467.52	Staurosporine analoqu, yüksək seçicilik	YES
+SB216763	176158	373.83	GSK-3 Ser/Thr kinaz inhibitoru	YES
+Quercetin	5280343	302.24	Bitki flavonoidi — kinaz inhibitor aktivliyi	YES
+Imatinib	5291	493.6	Gleevec — kinaz inhibitor müqayisəsi üçün	YES

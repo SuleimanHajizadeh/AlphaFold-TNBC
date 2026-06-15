@@ -1,0 +1,312 @@
+{
+  "STN7": {
+    "uniprot_id": "Q9S713",
+    "curated": {
+      "full_name": "Serine/threonine-protein kinase STN7, chloroplastic",
+      "gene_name": "STN7 / AT1G68830",
+      "organism": "Arabidopsis thaliana",
+      "subcellular_locations": [
+        "Chloroplast thylakoid membrane (stromal face)",
+        "Thylakoid lumen (transit peptide cleaved)"
+      ],
+      "molecular_functions": [
+        "Serine/threonine kinase activity (EC 2.7.11.1)",
+        "ATP binding (P-loop GxGxxG motif)",
+        "Protein substrate recognition (LHCII proteins)",
+        "Redox-sensing via disulfide bond (Cys residues in lumen domain)"
+      ],
+      "biological_processes": [
+        "State transition: State 1 \u2192 State 2 (light-harvesting regulation)",
+        "Phosphorylation of LHCII proteins (LHCB1, LHCB2, LHCB3)",
+        "Regulation of photosynthetic electron flow (PSI/PSII balancing)",
+        "Chloroplast retrograde signaling (kinase-mediated)",
+        "Plant acclimation to fluctuating light conditions",
+        "Regulation of cyclic electron flow around PSI"
+      ],
+      "substrates": [
+        {
+          "name": "LHCB1.1",
+          "uniprot": "P04778",
+          "site": "Thr-5",
+          "effect": "LHCII migration from PSII to PSI"
+        },
+        {
+          "name": "LHCB1.2",
+          "uniprot": "P0CJ48",
+          "site": "Thr-5",
+          "effect": "State 1\u21922 transition"
+        },
+        {
+          "name": "LHCB2.1",
+          "uniprot": "P04779",
+          "site": "Thr-5",
+          "effect": "Grana unstacking"
+        },
+        {
+          "name": "LHCB3",
+          "uniprot": "Q9SYW8",
+          "site": "Thr-5",
+          "effect": "Antenna remodeling"
+        },
+        {
+          "name": "STN7",
+          "uniprot": "Q9S713",
+          "site": "Thr-309",
+          "effect": "Autophosphorylation (activation loop)"
+        }
+      ],
+      "regulatory_inputs": [
+        "Activated by: reduced plastoquinone pool (high PSII light)",
+        "Inhibited by: oxidized PQ pool (high PSI light)",
+        "Inhibited by: thioredoxin (Trx-f) in stroma \u2014 reduces disulfide in lumen domain",
+        "Inhibited by: TAP38/PPH1 phosphatase (dephosphorylates LHCII)",
+        "Regulated by: PSI-H and PSI-L subunits (kinase activation scaffold)"
+      ],
+      "interaction_partners": [
+        {
+          "name": "TAP38/PPH1",
+          "role": "Antagonistic phosphatase \u2014 reverses STN7 action"
+        },
+        {
+          "name": "PSI-H (PSAH)",
+          "role": "Required for STN7 kinase activation"
+        },
+        {
+          "name": "PSI-L (PSAL)",
+          "role": "Required for LHCII\u2013PSI docking"
+        },
+        {
+          "name": "LHCB1",
+          "role": "Primary substrate \u2014 LHCII major component"
+        },
+        {
+          "name": "LHCB2",
+          "role": "Primary substrate \u2014 LHCII major component"
+        },
+        {
+          "name": "Cytochrome b6f",
+          "role": "Activation signal source (PQ oxidation sensor)"
+        },
+        {
+          "name": "STN8",
+          "role": "Functional paralog \u2014 shared regulatory network"
+        }
+      ],
+      "go_terms": {
+        "molecular_function": [
+          "GO:0004674 (protein serine/threonine kinase)",
+          "GO:0005524 (ATP binding)",
+          "GO:0046983 (protein dimerization)"
+        ],
+        "biological_process": [
+          "GO:0009651 (state transition)",
+          "GO:0018105 (peptidyl-serine phosphorylation)",
+          "GO:0009768 (photosynthesis, light harvesting)",
+          "GO:0010218 (response to far red light)",
+          "GO:0048437 (floral organ development)"
+        ],
+        "cellular_component": [
+          "GO:0009535 (chloroplast thylakoid membrane)",
+          "GO:0009534 (chloroplast thylakoid)",
+          "GO:0009570 (chloroplast stroma)"
+        ]
+      },
+      "cellular_pathway": [
+        "1. High PSII illumination \u2192 PQ pool reduction",
+        "2. Cyt b6f complex senses reduced PQ \u2192 activates STN7",
+        "3. STN7 kinase domain phosphorylates LHCII Thr-5",
+        "4. Phospho-LHCII detaches from PSII (grana)",
+        "5. Phospho-LHCII migrates to stroma lamellae",
+        "6. Phospho-LHCII docks at PSI via PSI-H/PSI-L",
+        "7. PSI antenna size increases \u2192 balanced excitation",
+        "8. Reversed by TAP38/PPH1 phosphatase under State 1 conditions"
+      ]
+    },
+    "go_terms": {
+      "molecular_function": [
+        "GO:0004674 (protein serine/threonine kinase)",
+        "GO:0005524 (ATP binding)",
+        "GO:0046983 (protein dimerization)"
+      ],
+      "biological_process": [
+        "GO:0009651 (state transition)",
+        "GO:0018105 (peptidyl-serine phosphorylation)",
+        "GO:0009768 (photosynthesis, light harvesting)",
+        "GO:0010218 (response to far red light)",
+        "GO:0048437 (floral organ development)"
+      ],
+      "cellular_component": [
+        "GO:0009535 (chloroplast thylakoid membrane)",
+        "GO:0009534 (chloroplast thylakoid)",
+        "GO:0009570 (chloroplast stroma)"
+      ]
+    },
+    "live_ptms": [
+      {
+        "position": 526,
+        "description": "Phosphoserine"
+      },
+      {
+        "position": 537,
+        "description": "Phosphothreonine"
+      },
+      {
+        "position": 541,
+        "description": "Phosphothreonine"
+      }
+    ],
+    "string_partners": [],
+    "n_substrates": 5,
+    "n_partners": 7,
+    "n_pathway_steps": 8
+  },
+  "STN8": {
+    "uniprot_id": "Q9LZV4",
+    "curated": {
+      "full_name": "Serine/threonine-protein kinase STN8, chloroplastic",
+      "gene_name": "STN8 / AT5G01920",
+      "organism": "Arabidopsis thaliana",
+      "subcellular_locations": [
+        "Chloroplast thylakoid membrane (stromal face)",
+        "Appressed thylakoid membrane (grana)"
+      ],
+      "molecular_functions": [
+        "Serine/threonine kinase activity (EC 2.7.11.1)",
+        "ATP binding (P-loop GxGxxG motif)",
+        "PSII core protein substrate recognition",
+        "Regulation of PSII repair cycle via D1 phosphorylation"
+      ],
+      "biological_processes": [
+        "Phosphorylation of PSII core proteins (D1, D2, CP43, PsbH)",
+        "Regulation of PSII repair cycle under high-light stress",
+        "Photoinhibition recovery (D1 turnover facilitation)",
+        "Grana margin dynamics (PSII monomer release)",
+        "Chloroplast quality control (damaged PSII targeting)",
+        "High-light acclimation response"
+      ],
+      "substrates": [
+        {
+          "name": "D1 (PsbA)",
+          "uniprot": "P83755",
+          "site": "Thr-2 (N-term)",
+          "effect": "D1 targeting to FtsH protease degradation"
+        },
+        {
+          "name": "D2 (PsbD)",
+          "uniprot": "P56762",
+          "site": "Ser-2 (N-term)",
+          "effect": "PSII core destabilization"
+        },
+        {
+          "name": "CP43 (PsbC)",
+          "uniprot": "P06172",
+          "site": "Thr (N-term)",
+          "effect": "PSII monomer formation"
+        },
+        {
+          "name": "PsbH",
+          "uniprot": "P06173",
+          "site": "Thr-2",
+          "effect": "PSII repair \u2014 FtsH accessibility"
+        },
+        {
+          "name": "STN8",
+          "uniprot": "Q9LZV4",
+          "site": "Thr-289",
+          "effect": "Autophosphorylation (activation loop)"
+        }
+      ],
+      "regulatory_inputs": [
+        "Activated by: high-light stress (photoinhibitory conditions)",
+        "Activated by: ROS production at PSII (singlet oxygen signal)",
+        "Regulated by: PBCP phosphatase (reverses PSII phosphorylation)",
+        "Independent of: PQ pool redox state (unlike STN7)",
+        "Partially redundant with STN7 for LHCII phosphorylation under extreme conditions"
+      ],
+      "interaction_partners": [
+        {
+          "name": "PBCP",
+          "role": "Antagonistic phosphatase \u2014 reverses PSII core phosphorylation"
+        },
+        {
+          "name": "FtsH protease",
+          "role": "Degrades phospho-D1 \u2192 enables PSII repair"
+        },
+        {
+          "name": "D1 (PsbA)",
+          "role": "Primary substrate \u2014 PSII reaction center"
+        },
+        {
+          "name": "D2 (PsbD)",
+          "role": "Primary substrate \u2014 PSII reaction center"
+        },
+        {
+          "name": "PsbH",
+          "role": "PSII core substrate \u2014 repair regulation"
+        },
+        {
+          "name": "CP43 (PsbC)",
+          "role": "PSII inner antenna substrate"
+        },
+        {
+          "name": "STN7",
+          "role": "Functional paralog \u2014 partial substrate overlap"
+        }
+      ],
+      "go_terms": {
+        "molecular_function": [
+          "GO:0004674 (protein serine/threonine kinase)",
+          "GO:0005524 (ATP binding)",
+          "GO:0042803 (protein homodimerization)"
+        ],
+        "biological_process": [
+          "GO:0010098 (photosystem II repair)",
+          "GO:0018105 (peptidyl-serine phosphorylation)",
+          "GO:0006979 (response to oxidative stress)",
+          "GO:0009644 (response to high light intensity)",
+          "GO:0030154 (cell differentiation)"
+        ],
+        "cellular_component": [
+          "GO:0009535 (chloroplast thylakoid membrane)",
+          "GO:0009534 (chloroplast thylakoid)",
+          "GO:0009654 (photosystem II oxygen evolving complex)"
+        ]
+      },
+      "cellular_pathway": [
+        "1. High-light stress \u2192 excess photons at PSII \u2192 D1 photodamage",
+        "2. ROS/singlet oxygen signal activates STN8 kinase",
+        "3. STN8 phosphorylates D1 Thr-2, D2 Ser-2, CP43, PsbH",
+        "4. Phospho-PSII core destabilizes grana stacking",
+        "5. Damaged PSII migrates to stroma lamellae / grana margins",
+        "6. FtsH protease (Zn-metalloprotease) degrades phospho-D1",
+        "7. New D1 is inserted \u2192 PSII reassembly",
+        "8. PBCP phosphatase reverses remaining phosphorylation",
+        "9. Repaired PSII re-enters grana stacks"
+      ]
+    },
+    "go_terms": {
+      "molecular_function": [
+        "GO:0004674 (protein serine/threonine kinase)",
+        "GO:0005524 (ATP binding)",
+        "GO:0042803 (protein homodimerization)"
+      ],
+      "biological_process": [
+        "GO:0010098 (photosystem II repair)",
+        "GO:0018105 (peptidyl-serine phosphorylation)",
+        "GO:0006979 (response to oxidative stress)",
+        "GO:0009644 (response to high light intensity)",
+        "GO:0030154 (cell differentiation)"
+      ],
+      "cellular_component": [
+        "GO:0009535 (chloroplast thylakoid membrane)",
+        "GO:0009534 (chloroplast thylakoid)",
+        "GO:0009654 (photosystem II oxygen evolving complex)"
+      ]
+    },
+    "live_ptms": [],
+    "string_partners": [],
+    "n_substrates": 5,
+    "n_partners": 7,
+    "n_pathway_steps": 9
+  }
+}

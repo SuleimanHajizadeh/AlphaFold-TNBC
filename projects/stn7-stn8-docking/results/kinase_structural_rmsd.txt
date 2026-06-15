@@ -1,0 +1,5 @@
+STN7 vs STN8 Structural Kinase Domain Superposition
+Number of C-alpha atoms used: 312
+RMSD: 3.7643 Angstroms
+Average pairwise C-alpha distance: 2.2888 Angstroms
+Max C-alpha distance: 20.1585 Angstroms

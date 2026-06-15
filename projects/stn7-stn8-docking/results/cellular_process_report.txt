@@ -1,0 +1,171 @@
+======================================================================
+  STN7/STN8 INTRACELLULAR PROCESS COMPREHENSIVE REPORT
+  Arabidopsis thaliana Chloroplast Thylakoid Kinases
+======================================================================
+
+──────────────────────────────────────────────────────────────────────
+  STN7 — Serine/threonine-protein kinase STN7, chloroplastic
+  Gene: STN7 / AT1G68830  |  UniProt: Q9S713
+──────────────────────────────────────────────────────────────────────
+
+  SUBCELLULAR LOCALIZATION:
+    • Chloroplast thylakoid membrane (stromal face)
+    • Thylakoid lumen (transit peptide cleaved)
+
+  MOLECULAR FUNCTIONS:
+    • Serine/threonine kinase activity (EC 2.7.11.1)
+    • ATP binding (P-loop GxGxxG motif)
+    • Protein substrate recognition (LHCII proteins)
+    • Redox-sensing via disulfide bond (Cys residues in lumen domain)
+
+  BIOLOGICAL PROCESSES:
+    • State transition: State 1 → State 2 (light-harvesting regulation)
+    • Phosphorylation of LHCII proteins (LHCB1, LHCB2, LHCB3)
+    • Regulation of photosynthetic electron flow (PSI/PSII balancing)
+    • Chloroplast retrograde signaling (kinase-mediated)
+    • Plant acclimation to fluctuating light conditions
+    • Regulation of cyclic electron flow around PSI
+
+  KNOWN SUBSTRATES (5):
+    • LHCB1.1 (P04778)  site: Thr-5
+      Effect: LHCII migration from PSII to PSI
+    • LHCB1.2 (P0CJ48)  site: Thr-5
+      Effect: State 1→2 transition
+    • LHCB2.1 (P04779)  site: Thr-5
+      Effect: Grana unstacking
+    • LHCB3 (Q9SYW8)  site: Thr-5
+      Effect: Antenna remodeling
+    • STN7 (Q9S713)  site: Thr-309
+      Effect: Autophosphorylation (activation loop)
+
+  REGULATORY INPUTS:
+    • Activated by: reduced plastoquinone pool (high PSII light)
+    • Inhibited by: oxidized PQ pool (high PSI light)
+    • Inhibited by: thioredoxin (Trx-f) in stroma — reduces disulfide in lumen domain
+    • Inhibited by: TAP38/PPH1 phosphatase (dephosphorylates LHCII)
+    • Regulated by: PSI-H and PSI-L subunits (kinase activation scaffold)
+
+  INTERACTION PARTNERS (7):
+    • TAP38/PPH1           → Antagonistic phosphatase — reverses STN7 action
+    • PSI-H (PSAH)         → Required for STN7 kinase activation
+    • PSI-L (PSAL)         → Required for LHCII–PSI docking
+    • LHCB1                → Primary substrate — LHCII major component
+    • LHCB2                → Primary substrate — LHCII major component
+    • Cytochrome b6f       → Activation signal source (PQ oxidation sensor)
+    • STN8                 → Functional paralog — shared regulatory network
+
+  CELLULAR SIGNALING PATHWAY:
+    1. High PSII illumination → PQ pool reduction
+    2. Cyt b6f complex senses reduced PQ → activates STN7
+    3. STN7 kinase domain phosphorylates LHCII Thr-5
+    4. Phospho-LHCII detaches from PSII (grana)
+    5. Phospho-LHCII migrates to stroma lamellae
+    6. Phospho-LHCII docks at PSI via PSI-H/PSI-L
+    7. PSI antenna size increases → balanced excitation
+    8. Reversed by TAP38/PPH1 phosphatase under State 1 conditions
+
+  GO TERMS:
+    Molecular Function:
+      - GO:0004674 (protein serine/threonine kinase)
+      - GO:0005524 (ATP binding)
+      - GO:0046983 (protein dimerization)
+    Biological Process:
+      - GO:0009651 (state transition)
+      - GO:0018105 (peptidyl-serine phosphorylation)
+      - GO:0009768 (photosynthesis, light harvesting)
+      - GO:0010218 (response to far red light)
+      - GO:0048437 (floral organ development)
+    Cellular Component:
+      - GO:0009535 (chloroplast thylakoid membrane)
+      - GO:0009534 (chloroplast thylakoid)
+      - GO:0009570 (chloroplast stroma)
+
+──────────────────────────────────────────────────────────────────────
+  STN8 — Serine/threonine-protein kinase STN8, chloroplastic
+  Gene: STN8 / AT5G01920  |  UniProt: Q9LZV4
+──────────────────────────────────────────────────────────────────────
+
+  SUBCELLULAR LOCALIZATION:
+    • Chloroplast thylakoid membrane (stromal face)
+    • Appressed thylakoid membrane (grana)
+
+  MOLECULAR FUNCTIONS:
+    • Serine/threonine kinase activity (EC 2.7.11.1)
+    • ATP binding (P-loop GxGxxG motif)
+    • PSII core protein substrate recognition
+    • Regulation of PSII repair cycle via D1 phosphorylation
+
+  BIOLOGICAL PROCESSES:
+    • Phosphorylation of PSII core proteins (D1, D2, CP43, PsbH)
+    • Regulation of PSII repair cycle under high-light stress
+    • Photoinhibition recovery (D1 turnover facilitation)
+    • Grana margin dynamics (PSII monomer release)
+    • Chloroplast quality control (damaged PSII targeting)
+    • High-light acclimation response
+
+  KNOWN SUBSTRATES (5):
+    • D1 (PsbA) (P83755)  site: Thr-2 (N-term)
+      Effect: D1 targeting to FtsH protease degradation
+    • D2 (PsbD) (P56762)  site: Ser-2 (N-term)
+      Effect: PSII core destabilization
+    • CP43 (PsbC) (P06172)  site: Thr (N-term)
+      Effect: PSII monomer formation
+    • PsbH (P06173)  site: Thr-2
+      Effect: PSII repair — FtsH accessibility
+    • STN8 (Q9LZV4)  site: Thr-289
+      Effect: Autophosphorylation (activation loop)
+
+  REGULATORY INPUTS:
+    • Activated by: high-light stress (photoinhibitory conditions)
+    • Activated by: ROS production at PSII (singlet oxygen signal)
+    • Regulated by: PBCP phosphatase (reverses PSII phosphorylation)
+    • Independent of: PQ pool redox state (unlike STN7)
+    • Partially redundant with STN7 for LHCII phosphorylation under extreme conditions
+
+  INTERACTION PARTNERS (7):
+    • PBCP                 → Antagonistic phosphatase — reverses PSII core phosphorylation
+    • FtsH protease        → Degrades phospho-D1 → enables PSII repair
+    • D1 (PsbA)            → Primary substrate — PSII reaction center
+    • D2 (PsbD)            → Primary substrate — PSII reaction center
+    • PsbH                 → PSII core substrate — repair regulation
+    • CP43 (PsbC)          → PSII inner antenna substrate
+    • STN7                 → Functional paralog — partial substrate overlap
+
+  CELLULAR SIGNALING PATHWAY:
+    1. High-light stress → excess photons at PSII → D1 photodamage
+    2. ROS/singlet oxygen signal activates STN8 kinase
+    3. STN8 phosphorylates D1 Thr-2, D2 Ser-2, CP43, PsbH
+    4. Phospho-PSII core destabilizes grana stacking
+    5. Damaged PSII migrates to stroma lamellae / grana margins
+    6. FtsH protease (Zn-metalloprotease) degrades phospho-D1
+    7. New D1 is inserted → PSII reassembly
+    8. PBCP phosphatase reverses remaining phosphorylation
+    9. Repaired PSII re-enters grana stacks
+
+  GO TERMS:
+    Molecular Function:
+      - GO:0004674 (protein serine/threonine kinase)
+      - GO:0005524 (ATP binding)
+      - GO:0042803 (protein homodimerization)
+    Biological Process:
+      - GO:0010098 (photosystem II repair)
+      - GO:0018105 (peptidyl-serine phosphorylation)
+      - GO:0006979 (response to oxidative stress)
+      - GO:0009644 (response to high light intensity)
+      - GO:0030154 (cell differentiation)
+    Cellular Component:
+      - GO:0009535 (chloroplast thylakoid membrane)
+      - GO:0009534 (chloroplast thylakoid)
+      - GO:0009654 (photosystem II oxygen evolving complex)
+
+======================================================================
+  STRUCTURAL-FUNCTION CORRELATION SUMMARY
+======================================================================
+
+  Domain               | STN7 Function              | STN8 Function
+  ─────────────────────┼────────────────────────────┼────────────────────────────
+  Transit Peptide      | Chloroplast import signal   | Chloroplast import signal
+  Transmembrane Anchor | Thylakoid membrane anchor   | Thylakoid membrane anchor
+  Kinase Domain        | LHCII phosphorylation       | PSII core phosphorylation
+  Activation Loop      | Autophosphorylation (Thr309)| Autophosphorylation (Thr289)
+  C-terminal Tail      | Substrate specificity       | Substrate specificity

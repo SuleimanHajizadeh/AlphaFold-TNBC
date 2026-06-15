@@ -1,0 +1,64 @@
+{
+  "STN7_Q9S713": {
+    "G-loop (P-loop)": [
+      {
+        "start": 141,
+        "end": 146,
+        "sequence": "GEGSFG"
+      }
+    ],
+    "HRD motif (C-loop)": [
+      {
+        "start": 277,
+        "end": 279,
+        "sequence": "HRD"
+      }
+    ],
+    "DFG motif": [],
+    "APE motif": [
+      {
+        "start": 324,
+        "end": 326,
+        "sequence": "APE"
+      }
+    ],
+    "GXGXXG (alternative)": [
+      {
+        "start": 141,
+        "end": 146,
+        "sequence": "GEGSFG"
+      }
+    ]
+  },
+  "STN8_Q9LZV4": {
+    "G-loop (P-loop)": [
+      {
+        "start": 140,
+        "end": 145,
+        "sequence": "GEGSFG"
+      }
+    ],
+    "HRD motif (C-loop)": [
+      {
+        "start": 306,
+        "end": 308,
+        "sequence": "HRD"
+      }
+    ],
+    "DFG motif": [
+      {
+        "start": 326,
+        "end": 328,
+        "sequence": "DFG"
+      }
+    ],
+    "APE motif": [],
+    "GXGXXG (alternative)": [
+      {
+        "start": 140,
+        "end": 145,
+        "sequence": "GEGSFG"
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+# =================================================================
+# STN7/STN8 Bioinformatics Pipeline — Git Ignore Rules
+# =================================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyc
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- IDE and editor configs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Linux ---
+*~
+.nfs*
+
+# --- Generated large data files (download fresh) ---
+data/structures/*.pdb
+data/structures/*.cif
+data/structures/*.bcif
+
+# --- Compressed archives ---
+*.gz
+*.zip
+*.tar
+*.bz2
+
+# --- Logs and temp files ---
+*.log
+*.tmp
+*.bak
+
+# --- But KEEP: committed FASTA files, MSA results, figures, results ---
+!data/fasta/*.fasta
+!data/msa/*.fasta
+!data/phylogeny/*.nwk
+!results/*.csv
+!results/*.txt
+!results/*.json
+!figures/*.png

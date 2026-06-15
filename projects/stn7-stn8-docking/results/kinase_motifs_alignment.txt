@@ -1,0 +1,44 @@
+=================================================================
+STN7/STN8 Kinase Motifs Comparative Sequence Alignment
+=================================================================
+
+--- G-loop (ATP-Binding G-loop) columns 345-350 ---
+  STN7 (Arabi - Q9S713)          : GEGSFG
+  STN7 (Oryza - B9FLG7)          : GEGAFG
+  STN7 (Zea - A0A3L6E9I0)        : GEGAFG
+  STN7 (Chlam - Q84V18)          : GTGGFG
+  STN8 (Arabi - Q9LZV4)          : GEGSFG
+  STN8 (Oryza - B7E5Q2)          : --GS--
+  STN8 (Zea - A0A3L6ED31)        : GEGSFG
+  STN8 (Chlam - Q84V17)          : PE----
+
+--- HRD region (Catalytic HRD Region) columns 609-614 ---
+  STN7 (Arabi - Q9S713)          : HRDVKP
+  STN7 (Oryza - B9FLG7)          : HRDVKP
+  STN7 (Zea - A0A3L6E9I0)        : HRDIKP
+  STN7 (Chlam - Q84V18)          : HRDIKP
+  STN8 (Arabi - Q9LZV4)          : HRDVKP
+  STN8 (Oryza - B7E5Q2)          : HRDIKP
+  STN8 (Zea - A0A3L6ED31)        : HRDIKP
+  STN8 (Chlam - Q84V17)          : HRDIKP
+
+--- DFG region (Mg2+-binding DFG Region) columns 633-638 ---
+  STN7 (Arabi - Q9S713)          : DLGAAA
+  STN7 (Oryza - B9FLG7)          : DLGAAA
+  STN7 (Zea - A0A3L6E9I0)        : DLGAAA
+  STN7 (Chlam - Q84V18)          : DLGAAA
+  STN8 (Arabi - Q9LZV4)          : DFGAAA
+  STN8 (Oryza - B7E5Q2)          : DFGAAT
+  STN8 (Zea - A0A3L6ED31)        : DFGAAT
+  STN8 (Chlam - Q84V17)          : DFGAAV
+
+--- APE region (Substrate-binding APE Region) columns 659-664 ---
+  STN7 (Arabi - Q9S713)          : APEQYI
+  STN7 (Oryza - B9FLG7)          : APEQYI
+  STN7 (Zea - A0A3L6E9I0)        : APEQYI
+  STN7 (Chlam - Q84V18)          : PPQQYI
+  STN8 (Arabi - Q9LZV4)          : PPELYV
+  STN8 (Oryza - B7E5Q2)          : PPELYV
+  STN8 (Zea - A0A3L6ED31)        : PPELYV
+  STN8 (Chlam - Q84V17)          : PPEELV
+

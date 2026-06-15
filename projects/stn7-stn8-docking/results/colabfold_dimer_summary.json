@@ -1,0 +1,265 @@
+{
+  "threshold_angstrom": 6.0,
+  "pdb_file": "STN7_STN8_predicted_rank_001_alphafold2_multimer_v3_model_1_seed_000.pdb",
+  "scores": {
+    "ptm": 0.82,
+    "iptm": 0.75
+  },
+  "pae_statistics": {
+    "mean_intra_A": 11.37,
+    "mean_intra_B": 10.25,
+    "mean_inter": 24.94,
+    "min_inter": 4.0
+  },
+  "n_contact_pairs": 2179,
+  "top_contacts": [
+    {
+      "res_a": 261,
+      "name_a": "ARG",
+      "res_b": 290,
+      "name_b": "ARG",
+      "distance": 0.107
+    },
+    {
+      "res_a": 361,
+      "name_a": "ILE",
+      "res_b": 389,
+      "name_b": "MET",
+      "distance": 0.185
+    },
+    {
+      "res_a": 363,
+      "name_a": "SER",
+      "res_b": 391,
+      "name_b": "SER",
+      "distance": 0.19
+    },
+    {
+      "res_a": 451,
+      "name_a": "TYR",
+      "res_b": 476,
+      "name_b": "TYR",
+      "distance": 0.197
+    },
+    {
+      "res_a": 362,
+      "name_a": "TYR",
+      "res_b": 390,
+      "name_b": "TYR",
+      "distance": 0.203
+    },
+    {
+      "res_a": 360,
+      "name_a": "ASP",
+      "res_b": 388,
+      "name_b": "ASP",
+      "distance": 0.205
+    },
+    {
+      "res_a": 359,
+      "name_a": "PHE",
+      "res_b": 387,
+      "name_b": "PHE",
+      "distance": 0.236
+    },
+    {
+      "res_a": 278,
+      "name_a": "ARG",
+      "res_b": 307,
+      "name_b": "ARG",
+      "distance": 0.238
+    },
+    {
+      "res_a": 322,
+      "name_a": "TYR",
+      "res_b": 350,
+      "name_b": "TYR",
+      "distance": 0.297
+    },
+    {
+      "res_a": 365,
+      "name_a": "GLY",
+      "res_b": 393,
+      "name_b": "GLY",
+      "distance": 0.33
+    },
+    {
+      "res_a": 258,
+      "name_a": "THR",
+      "res_b": 287,
+      "name_b": "GLN",
+      "distance": 0.341
+    },
+    {
+      "res_a": 243,
+      "name_a": "GLN",
+      "res_b": 272,
+      "name_b": "LEU",
+      "distance": 0.347
+    },
+    {
+      "res_a": 229,
+      "name_a": "GLU",
+      "res_b": 258,
+      "name_b": "SER",
+      "distance": 0.353
+    },
+    {
+      "res_a": 317,
+      "name_a": "LEU",
+      "res_b": 345,
+      "name_b": "LEU",
+      "distance": 0.368
+    },
+    {
+      "res_a": 260,
+      "name_a": "MET",
+      "res_b": 289,
+      "name_b": "MET",
+      "distance": 0.37
+    },
+    {
+      "res_a": 264,
+      "name_a": "LEU",
+      "res_b": 293,
+      "name_b": "ILE",
+      "distance": 0.398
+    },
+    {
+      "res_a": 364,
+      "name_a": "ILE",
+      "res_b": 392,
+      "name_b": "ALA",
+      "distance": 0.41
+    },
+    {
+      "res_a": 318,
+      "name_a": "LEU",
+      "res_b": 346,
+      "name_b": "LEU",
+      "distance": 0.411
+    },
+    {
+      "res_a": 263,
+      "name_a": "LEU",
+      "res_b": 292,
+      "name_b": "ILE",
+      "distance": 0.42
+    },
+    {
+      "res_a": 358,
+      "name_a": "ARG",
+      "res_b": 386,
+      "name_b": "LEU",
+      "distance": 0.462
+    },
+    {
+      "res_a": 257,
+      "name_a": "GLN",
+      "res_b": 286,
+      "name_b": "LYS",
+      "distance": 0.484
+    },
+    {
+      "res_a": 321,
+      "name_a": "ARG",
+      "res_b": 349,
+      "name_b": "ASP",
+      "distance": 0.509
+    },
+    {
+      "res_a": 357,
+      "name_a": "ASP",
+      "res_b": 385,
+      "name_b": "ASP",
+      "distance": 0.527
+    },
+    {
+      "res_a": 366,
+      "name_a": "LEU",
+      "res_b": 394,
+      "name_b": "ILE",
+      "distance": 0.54
+    },
+    {
+      "res_a": 314,
+      "name_a": "LYS",
+      "res_b": 343,
+      "name_b": "ARG",
+      "distance": 0.543
+    },
+    {
+      "res_a": 232,
+      "name_a": "TYR",
+      "res_b": 261,
+      "name_b": "SER",
+      "distance": 0.556
+    },
+    {
+      "res_a": 259,
+      "name_a": "ILE",
+      "res_b": 288,
+      "name_b": "ILE",
+      "distance": 0.563
+    },
+    {
+      "res_a": 287,
+      "name_a": "PHE",
+      "res_b": 316,
+      "name_b": "VAL",
+      "distance": 0.569
+    },
+    {
+      "res_a": 368,
+      "name_a": "PHE",
+      "res_b": 396,
+      "name_b": "LEU",
+      "distance": 0.573
+    },
+    {
+      "res_a": 279,
+      "name_a": "ASP",
+      "res_b": 308,
+      "name_b": "ASP",
+      "distance": 0.574
+    }
+  ],
+  "STN7": {
+    "n_interface_residues": 373,
+    "total_residues": 562,
+    "interface_pct": 66.4,
+    "composition": {
+      "hydrophobic": 173,
+      "polar": 81,
+      "charged_pos": 50,
+      "charged_neg": 41,
+      "special": 28
+    },
+    "domain_distribution": {
+      "transmembrane_anchor": 17,
+      "kinase_domain": 298,
+      "activation_loop": 30,
+      "c_terminal_tail": 28
+    },
+    "mean_interface_plddt": 82.74
+  },
+  "STN8": {
+    "n_interface_residues": 384,
+    "total_residues": 495,
+    "interface_pct": 77.6,
+    "composition": {
+      "hydrophobic": 177,
+      "polar": 73,
+      "charged_pos": 57,
+      "charged_neg": 45,
+      "special": 32
+    },
+    "domain_distribution": {
+      "transmembrane_anchor": 18,
+      "kinase_domain": 245,
+      "activation_loop": 30,
+      "c_terminal_tail": 91
+    },
+    "mean_interface_plddt": 84.82
+  }
+}
