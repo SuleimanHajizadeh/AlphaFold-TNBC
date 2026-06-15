@@ -51,6 +51,52 @@ graph TD
 
 ---
 
+## 🔬 Mathematical & Biophysical Foundations
+
+To demonstrate academic rigour, the structural biology pipelines in this laboratory are backed by direct mathematical derivations rather than simple GUI-based tools:
+
+### 1. Local Distance Difference Test (LDDT) for pLDDT Confidence
+AlphaFold2 predicts the true Local Distance Difference Test (LDDT) to measure local structural agreement without global alignment.
+Let $D$ be the set of all $C_\alpha$ atom pairs $(i, j)$ in the true structure within a threshold $R = 15\text{ Å}$:
+$$D = \{ (i,j) \mid d_{\text{true}}(i,j) \leq R, \ i \neq j \}$$
+
+The distance difference for a pair $(i,j)$ between predicted ($d_{\text{pred}}$) and true ($d_{\text{true}}$) structures is:
+$$\Delta_{ij} = d_{\text{pred}}(i,j) - d_{\text{true}}(i,j)$$
+
+The LDDT score is computed as:
+$$\text{LDDT} = \frac{1}{4 |D|} \sum_{(i,j) \in D} \left[ \mathbb{I}(|\Delta_{ij}| \leq 0.5\text{Å}) + \mathbb{I}(|\Delta_{ij}| \leq 1.0\text{Å}) + \mathbb{I}(|\Delta_{ij}| \leq 2.0\text{Å}) + \mathbb{I}(|\Delta_{ij}| \leq 4.0\text{Å}) \right]$$
+where $\mathbb{I}(\cdot)$ is the indicator function.
+
+---
+
+### 2. Peptide Backbone Dihedral Angles ($\phi$ & $\psi$) via Vector Algebra
+The secondary structure is characterized by mapping the dihedral angles $\phi$ and $\psi$ onto a Ramachandran plot. A dihedral angle defined by four sequential Cartesian coordinates $\mathbf{r}_1, \mathbf{r}_2, \mathbf{r}_3, \mathbf{r}_4$ is computed using vector cross-products:
+1. Bond vectors:
+   $$\mathbf{v}_1 = \mathbf{r}_2 - \mathbf{r}_1, \quad \mathbf{v}_2 = \mathbf{r}_3 - \mathbf{r}_2, \quad \mathbf{v}_3 = \mathbf{r}_4 - \mathbf{r}_3$$
+2. Normals to the planes $(\mathbf{r}_1, \mathbf{r}_2, \mathbf{r}_3)$ and $(\mathbf{r}_2, \mathbf{r}_3, \mathbf{r}_4)$:
+   $$\mathbf{n}_1 = \mathbf{v}_1 \times \mathbf{v}_2, \quad \mathbf{n}_2 = \mathbf{v}_2 \times \mathbf{v}_3$$
+3. Normalized perpendicular vector:
+   $$\mathbf{u} = \frac{\mathbf{v}_2}{|\mathbf{v}_2|}$$
+4. Dihedral angle $\theta$ ($\phi$ or $\psi$) resolved in range $[-\pi, \pi]$:
+   $$\theta = \operatorname{atan2}\left( (\mathbf{n}_1 \times \mathbf{n}_2) \cdot \mathbf{u}, \ \mathbf{n}_1 \cdot \mathbf{n}_2 \right)$$
+
+---
+
+### 3. $C_\alpha$ Pairwise Distance and Contact Map Topology
+For $N$ residues, the $N \times N$ distance matrix $D$ is populated using Euclidean geometry:
+$$D_{ij} = \sqrt{(x_i - x_j)^2 + (y_i - y_j)^2 + (z_i - z_j)^2}$$
+
+An active physical contact is defined to eliminate trivial sequence neighbors:
+$$D_{ij} \leq 8.0\text{ Å} \quad \text{and} \quad |i - j| \geq 6$$
+
+---
+
+### 4. Predicted Aligned Error (PAE) Matrix
+Let $\mathbf{x}_{\text{true}, j}$ and $\mathbf{x}_{\text{pred}, j}$ represent the coordinates of $C_\alpha$ atom $j$. Let $\mathbf{T}_i$ be the rigid transformation (rotation + translation) aligning the predicted local frame of residue $i$ to its true local frame:
+$$\text{PAE}_{ij} = \mathbb{E} \left[ d\left( \mathbf{x}_{\text{true}, j}, \ \mathbf{T}_i \mathbf{x}_{\text{pred}, j} \right) \right]$$
+
+---
+
 ## 🚀 Environment & Setup
 
 Both pipelines run on a unified Python stack. Set up the Conda environment using:
