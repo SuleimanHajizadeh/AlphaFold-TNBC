@@ -78,7 +78,7 @@ The secondary structure is characterized by mapping the dihedral angles $\phi$ a
 3. Normalized perpendicular vector:
    $$\mathbf{u} = \frac{\mathbf{v}_2}{|\mathbf{v}_2|}$$
 4. Dihedral angle $\theta$ ($\phi$ or $\psi$) resolved in range $[-\pi, \pi]$:
-   $$\theta = \operatorname{atan2}\left( (\mathbf{n}_1 \times \mathbf{n}_2) \cdot \mathbf{u}, \ \mathbf{n}_1 \cdot \mathbf{n}_2 \right)$$
+   $$\theta = \mathrm{atan2}\left( (\mathbf{n}_1 \times \mathbf{n}_2) \cdot \mathbf{u}, \ \mathbf{n}_1 \cdot \mathbf{n}_2 \right)$$
 
 ---
 

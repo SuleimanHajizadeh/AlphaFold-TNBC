@@ -78,7 +78,7 @@ A dihedral angle defined by four sequential Cartesian coordinates $\mathbf{r}_1,
 3. Compute the normalized perpendicular vector:
    $$\mathbf{u} = \frac{\mathbf{v}_2}{|\mathbf{v}_2|}$$
 4. The dihedral angle $\theta$ ($\phi$ or $\psi$) is resolved in the range $[-\pi, \pi]$ using:
-   $$\theta = \operatorname{atan2}\left( (\mathbf{n}_1 \times \mathbf{n}_2) \cdot \mathbf{u}, \ \mathbf{n}_1 \cdot \mathbf{n}_2 \right)$$
+   $$\theta = \mathrm{atan2}\left( (\mathbf{n}_1 \times \mathbf{n}_2) \cdot \mathbf{u}, \ \mathbf{n}_1 \cdot \mathbf{n}_2 \right)$$
 
 ---
 
