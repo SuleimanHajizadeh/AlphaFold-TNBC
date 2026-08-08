@@ -1,0 +1,78 @@
+; VARIOUS PREPROCESSING OPTIONS
+; this tells GROMACS to allow the water to be flexible (i.e. to allow for bond vibrations and angle vibrations) 
+define                   = -DFLEXIBLE
+
+; RUN CONTROL PARAMETERS
+; this is the STEEPEST DESCENT energy minimization algorithm
+integrator               = steep
+; run for as long as possible
+nsteps                   = -1 
+
+; ENERGY MINIMIZATION OPTIONS
+; Force tolerance and initial step-size
+; go on with the energy minimisation as long as the maximum force on any atom is less than 1000 kJ/(mol nm)
+emtol                    = 1000
+; this an indication about the maximum movement allowed for any atom in nm
+emstep                   = 0.01
+
+; OUTPUT CONTROL OPTIONS
+; Output frequency for coords (x), velocities (v) and forces (f)
+nstxout                  = 10
+nstvout                  = 0 
+nstfout                  = 0
+; Output frequency for energies to log file and energy file
+nstlog                   = 1000
+nstcalcenergy            = 1
+nstenergy                = 1000
+; Output frequency and precision for .xtc file
+nstxout-compressed       = 1
+compressed-x-precision   = 1000
+
+; NEIGHBORSEARCHING PARAMETERS
+; cut-off scheme (Verlet: particle based cut-offs, group: using charge groups)
+cutoff-scheme            = Verlet
+; nblist update frequency
+nstlist                  = 1
+; ns algorithm (simple or grid)
+ns_type                  = grid
+; Periodic boundary conditions: xyz, no, xy
+pbc                      = xyz
+periodic_molecules       = no
+; nblist cut-off        
+rlist                    = 0.9
+
+; OPTIONS FOR ELECTROSTATICS AND VDW
+; Method for doing electrostatics
+coulombtype              = pme
+coulomb-modifier         = Potential-shift
+rcoulomb-switch          = 0
+rcoulomb                 = 0.9
+; Relative dielectric constant for the medium and the reaction field
+epsilon_r                = 1
+epsilon_rf               = 1
+; Method for doing Van der Waals
+vdw-type                 = cut-off
+vdw-modifier             = Potential-shift
+; cut-off lengths       
+rvdw-switch              = 0
+rvdw                     = 0.9
+; Apply long range dispersion corrections for Energy and Pressure
+DispCorr                 = no
+; Extension of the potential lookup tables beyond the cut-off
+table-extension          = 1
+; Separate tables between energy group pairs
+energygrp-table          = 
+; Spacing for the PME/PPPM FFT grid
+fourierspacing           = 0.12
+; FFT grid size, when a value is 0 fourierspacing will be used
+fourier_nx               = 0
+fourier_ny               = 0
+fourier_nz               = 0
+; EWALD/PME/PPPM parameters
+pme_order                = 4
+ewald_rtol               = 1e-05
+ewald-rtol-lj            = 0.001
+lj-pme-comb-rule         = Geometric
+ewald_geometry           = 3d
+epsilon_surface          = 0
+
