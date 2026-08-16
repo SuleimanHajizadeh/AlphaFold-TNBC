@@ -91,3 +91,22 @@ Chronological audit ledger of all knowledge base operations (ingestion, major sy
 - **Catalog Update**: Fully updated `wiki/index.md`.
 - **Lint Audit**: 0 broken links, 0 orphan notes, 100% interconnected knowledge graph.
 - **Key Takeaway**: Unified multi-scale biology from transcriptomic network hubs (WGCNA) to atomic kinase mechanics (AF2, RINs, MSMs, and allosteric drug design).
+
+---
+
+## [2026-08-17] synthesis | Experimental Structural Methods, Kinase Regulators, and Thylakoid Circuits
+- **Created Entity Notes**:
+  - `wiki/entities/PDK1.md` (Master AGC kinase activator of AKT1 Thr308)
+  - `wiki/entities/mTORC2.md` (Hydrophobic motif kinase of AKT1 Ser473)
+  - `wiki/entities/PTEN.md` (Tumor suppressor lipid phosphatase)
+  - `wiki/entities/TAP38-PPH1.md` (Thylakoid phosphatase antagonizing STN7)
+  - `wiki/entities/PSII Reaction Center D1.md` (Core reaction center protein phosphorylated by STN8)
+- **Created Concept Notes**:
+  - `wiki/concepts/Cryo-Electron Microscopy (Cryo-EM).md` (Single-particle SPA & membrane complex solving)
+  - `wiki/concepts/X-Ray Crystallography & Electron Density.md` (Diffraction, phase problem & B-factors)
+  - `wiki/concepts/Intrinsically Disordered Proteins & Condensates.md` (Ensembles, LLPS & AF2 disorder profiling)
+- **Created Synthesis Notes**:
+  - `wiki/syntheses/Structural Biology Methods - Experimental Cryo-EM and X-Ray vs Deep Learning AF2.md`
+  - `wiki/syntheses/Thylakoid Phosphorylation Dynamics - STN7-TAP38 Circuit vs STN8 Repair.md`
+- **Catalog Update**: Fully updated `wiki/index.md` (now containing 44 total interlinked pages).
+- **Key Takeaway**: Comprehensive mapping of kinase regulatory networks, biophysical experimental standards, and plant photosynthetic photoprotection circuitry.
