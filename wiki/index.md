@@ -7,32 +7,43 @@ updated: 2026-08-17
 
 # Wiki Index
 
-Welcome to the **LLM Wiki**. This catalog provides an organized directory of all knowledge pages maintained by the LLM agent.
+Welcome to the **Computational Structural Biology LLM Wiki**. This catalog provides a structured index of all persistent knowledge pages, organized by entities, concepts, syntheses, and source summaries.
 
 ---
 
 ## 🏛️ Entities
-*Pages representing specific proteins, genes, tools, algorithms, or platforms.*
+*Specific proteins, genes, machine learning models, and biological targets.*
 
-*(No entities indexed yet. Ingest your first source to populate.)*
+* [[AKT1]] — RAC-alpha serine/threonine-protein kinase, central hub kinase in PI3K/Akt signaling and TNBC.
+* [[STN7]] — Chloroplast thylakoid kinase mediating LHCII phosphorylation and Photosystem II/I state transitions.
+* [[STN8]] — Chloroplast thylakoid kinase mediating PSII core reaction center repair under high-light stress.
+* [[AlphaFold2]] — DeepMind deep learning system for high-accuracy protein 3D structure prediction.
+* [[TP53]] — Principal tumor suppressor gene and transcription factor, with TNBC hotspot mutations at codons 175, 248, and 273.
 
 ---
 
 ## 💡 Concepts
-*Pages covering biological mechanisms, structural phenomena, biophysical principles, or computational methods.*
+*Fundamental biological mechanisms, biophysical principles, and computational structural metrics.*
 
-*(No concepts indexed yet. Ingest your first source to populate.)*
+* [[Kinase Activation Loop & Allostery]] — Structural mechanisms of DFG-in/out transitions, phosphorylation switches, and PH-domain autoinhibition.
+* [[Local Distance Difference Test (LDDT & pLDDT)]] — Superposition-free local structural confidence formulation and IDR thresholding.
+* [[Ramachandran Dihedral Angles]] — Peptide backbone torsion angles ($\phi/\psi$) in vector algebra and energetically allowed conformations.
+* [[Contact Map Analysis]] — Pairwise $C_\alpha$ Euclidean distance matrices, contact definitions, and tertiary topology patterns.
+* [[Thylakoid State Transitions]] — Molecular mechanisms of redox-dependent LHCII migration between PSII and PSI.
+* [[Structural Superposition & RMSD]] — Kabsch SVD algorithm for rigid-body 3D alignment and root-mean-square deviation.
 
 ---
 
 ## 🔬 Syntheses & Deep Dives
-*Cross-cutting comparisons, analyses, and answered queries compiled into persistent wiki pages.*
+*Cross-cutting comparisons, evolutionary analyses, and compiled research queries.*
 
-*(No syntheses indexed yet.)*
+* [[Comparative Kinase Mechanics - AKT1 vs STN7-STN8]] — In-depth architectural comparison between human oncogenic AKT1 and plant thylakoid regulatory kinases STN7/STN8.
 
 ---
 
 ## 📚 Sources
-*Structured summaries of ingested papers, articles, and documents from `raw/`.*
+*Structured summaries of ingested projects and raw documents.*
 
-*(No sources indexed yet.)*
+* [[Source - AKT1 Kinase Modeling Project]] — Structural analysis of TNBC hub kinase AKT1 using ColabFold AF2, pLDDT, Ramachandran vectors, and contact matrices.
+* [[Source - STN7-STN8 Docking Project]] — Evolutionary ortholog alignment, AF2 structural retrieval, SVD superposition, and hydrophobicity profiling of chloroplast thylakoid kinases.
+* [[Source - Bioinformatics Starter Kit]] — Command-line utilities for genomic translation, mutation analysis, RCSB PDB parsing, and 3D Euclidean distances.
