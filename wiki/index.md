@@ -29,6 +29,9 @@ Welcome to the **Computational Structural Biology LLM Wiki**. This catalog provi
 
 * [[Kinase Activation Loop & Allostery]] — Structural mechanisms of DFG-in/out transitions, phosphorylation switches, and PH-domain autoinhibition.
 * [[PI3K-Akt-mTOR Signaling Pathway]] — Signal transduction hierarchy, lipid kinase activation, dual-site phosphorylation, and oncogenic dysregulation.
+* [[Biochemical Mechanism of Phosphoryl Transfer]] — In-line nucleophilic attack, transition state geometry, and catalytic triads/$\text{Mg}^{2+}$ coordination in kinases.
+* [[DNA-Protein Recognition & Binding Dynamics]] — Major groove direct base contacts vs minor groove shape readout, and mutational disruptions in p53.
+* [[Residue Interaction Networks & Graph Centrality]] — Residue graph topology, betweenness centrality, and allosteric communication bottlenecks.
 * [[Local Distance Difference Test (LDDT & pLDDT)]] — Superposition-free local structural confidence formulation and IDR thresholding.
 * [[Ramachandran Dihedral Angles]] — Peptide backbone torsion angles ($\phi/\psi$) in vector algebra and energetically allowed conformations.
 * [[Contact Map Analysis]] — Pairwise $C_\alpha$ Euclidean distance matrices, contact definitions, and tertiary topology patterns.
@@ -42,10 +45,11 @@ Welcome to the **Computational Structural Biology LLM Wiki**. This catalog provi
 ---
 
 ## 🔬 Syntheses & Deep Dives
-*Cross-cutting comparisons, evolutionary analyses, and compiled research queries.*
+*Cross-cutting comparisons, multi-scale pipelines, and compiled research queries.*
 
 * [[Comparative Kinase Mechanics - AKT1 vs STN7-STN8]] — In-depth architectural comparison between human oncogenic AKT1 and plant thylakoid regulatory kinases STN7/STN8.
 * [[Allosteric Drug Discovery & Conformational Selection in Kinases]] — Computational strategies integrating AF2 disorder profiling, enhanced sampling MD, MSMs, and ensemble docking for kinase targeting.
+* [[Network to Structure - From WGCNA Hubs to Allosteric Kinase Inhibitors]] — Complete multi-scale paradigm connecting transcriptomic network hubs to atomic structure dynamics and drug design.
 
 ---
 
@@ -56,3 +60,6 @@ Welcome to the **Computational Structural Biology LLM Wiki**. This catalog provi
 * [[Source - STN7-STN8 Docking Project]] — Evolutionary ortholog alignment, AF2 structural retrieval, SVD superposition, and hydrophobicity profiling of chloroplast thylakoid kinases.
 * [[Source - Bioinformatics Starter Kit]] — Command-line utilities for genomic translation, mutation analysis, RCSB PDB parsing, and 3D Euclidean distances.
 * [[Source - Structural Bioinformatics Course Curriculum]] — Advanced master's curriculum covering biomolecular simulations, enhanced sampling, MSMs, docking, and de novo protein design.
+* [[Source - Principles of Nucleic Acid Structure]] — Physical principles of DNA/RNA helical polymorphism, base stacking, and macromolecular recognition.
+* [[Source - Graph Theory and Network Biology]] — Mathematical graph algorithms, scale-free topologies, betweenness centrality, and residue networks.
+* [[Source - Chemical Principles of Enzyme Catalysis & Phosphoryl Transfer]] — Reaction mechanisms, transition states, and catalytic triads in kinase enzymology.

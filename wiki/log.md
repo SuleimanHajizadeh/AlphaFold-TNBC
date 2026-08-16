@@ -70,3 +70,24 @@ Chronological audit ledger of all knowledge base operations (ingestion, major sy
   - `wiki/syntheses/Allosteric Drug Discovery & Conformational Selection in Kinases.md`
 - **Catalog Update**: Updated `wiki/index.md` with new entities, concepts, and syntheses.
 - **Key Takeaway**: Bridged molecular signaling networks with physical conformational sampling (AF2 disorder, enhanced MD, MSMs, and ensemble docking) for allosteric kinase targeting.
+
+---
+
+## [2026-08-17] ingest & synthesis | Biophysical Principles, Graph Theory, and Multi-Scale Paradigms
+- **Ingested Tutorials & Literature**:
+  - `Structural Biology Tutorials/Principles_of_nucleic_acid_structure.pdf`
+  - `Structural Biology Tutorials/graph_theory.pdf`
+  - `Structural Biology Tutorials/SECOND_EDITION_Jonathan_Clayden_Nick_Greeves_Stuart_Warren_PDFDrive.pdf`
+- **Created Source Notes**:
+  - `wiki/sources/Source - Principles of Nucleic Acid Structure.md`
+  - `wiki/sources/Source - Graph Theory and Network Biology.md`
+  - `wiki/sources/Source - Chemical Principles of Enzyme Catalysis & Phosphoryl Transfer.md`
+- **Created Concept Notes**:
+  - `wiki/concepts/DNA-Protein Recognition & Binding Dynamics.md`
+  - `wiki/concepts/Residue Interaction Networks & Graph Centrality.md`
+  - `wiki/concepts/Biochemical Mechanism of Phosphoryl Transfer.md`
+- **Created Synthesis Note**:
+  - `wiki/syntheses/Network to Structure - From WGCNA Hubs to Allosteric Kinase Inhibitors.md`
+- **Catalog Update**: Fully updated `wiki/index.md`.
+- **Lint Audit**: 0 broken links, 0 orphan notes, 100% interconnected knowledge graph.
+- **Key Takeaway**: Unified multi-scale biology from transcriptomic network hubs (WGCNA) to atomic kinase mechanics (AF2, RINs, MSMs, and allosteric drug design).
