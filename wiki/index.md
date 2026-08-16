@@ -12,11 +12,13 @@ Welcome to the **Computational Structural Biology LLM Wiki**. This catalog provi
 ---
 
 ## 🏛️ Entities
-*Specific proteins, genes, machine learning models, and biological targets.*
+*Specific proteins, genes, complexes, machine learning models, and biological targets.*
 
 * [[AKT1]] — RAC-alpha serine/threonine-protein kinase, central hub kinase in PI3K/Akt signaling and TNBC.
 * [[STN7]] — Chloroplast thylakoid kinase mediating LHCII phosphorylation and Photosystem II/I state transitions.
 * [[STN8]] — Chloroplast thylakoid kinase mediating PSII core reaction center repair under high-light stress.
+* [[LHCII]] — Light-Harvesting Complex II, trimeric antenna complex and primary substrate of STN7.
+* [[Cytochrome b6f]] — Integral thylakoid redox sensor and electron transport complex upstream of STN7.
 * [[AlphaFold2]] — DeepMind deep learning system for high-accuracy protein 3D structure prediction.
 * [[TP53]] — Principal tumor suppressor gene and transcription factor, with TNBC hotspot mutations at codons 175, 248, and 273.
 
@@ -26,6 +28,7 @@ Welcome to the **Computational Structural Biology LLM Wiki**. This catalog provi
 *Fundamental biological mechanisms, biophysical principles, and computational structural metrics.*
 
 * [[Kinase Activation Loop & Allostery]] — Structural mechanisms of DFG-in/out transitions, phosphorylation switches, and PH-domain autoinhibition.
+* [[PI3K-Akt-mTOR Signaling Pathway]] — Signal transduction hierarchy, lipid kinase activation, dual-site phosphorylation, and oncogenic dysregulation.
 * [[Local Distance Difference Test (LDDT & pLDDT)]] — Superposition-free local structural confidence formulation and IDR thresholding.
 * [[Ramachandran Dihedral Angles]] — Peptide backbone torsion angles ($\phi/\psi$) in vector algebra and energetically allowed conformations.
 * [[Contact Map Analysis]] — Pairwise $C_\alpha$ Euclidean distance matrices, contact definitions, and tertiary topology patterns.
@@ -42,6 +45,7 @@ Welcome to the **Computational Structural Biology LLM Wiki**. This catalog provi
 *Cross-cutting comparisons, evolutionary analyses, and compiled research queries.*
 
 * [[Comparative Kinase Mechanics - AKT1 vs STN7-STN8]] — In-depth architectural comparison between human oncogenic AKT1 and plant thylakoid regulatory kinases STN7/STN8.
+* [[Allosteric Drug Discovery & Conformational Selection in Kinases]] — Computational strategies integrating AF2 disorder profiling, enhanced sampling MD, MSMs, and ensemble docking for kinase targeting.
 
 ---
 

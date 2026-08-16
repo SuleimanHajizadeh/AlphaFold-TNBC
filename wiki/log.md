@@ -57,3 +57,16 @@ Chronological audit ledger of all knowledge base operations (ingestion, major sy
 - **Cross-Updated**:
   - Linked new concepts to `[[AlphaFold2]]`, `[[AKT1]]`, `[[STN7]]`, `[[STN8]]`, and updated `wiki/index.md`.
 - **Key Takeaway**: Integrated foundational physical and machine-learning frameworks (force fields, metadynamics, MSMs, Lamarckian docking, RFdiffusion, and ProteinMPNN) into the compiled knowledge base.
+
+---
+
+## [2026-08-17] synthesis | Kinase Signaling, Photosynthetic Antennas, and Allosteric Drug Discovery
+- **Created Entity Notes**:
+  - `wiki/entities/LHCII.md` (Light-Harvesting Complex II trimer)
+  - `wiki/entities/Cytochrome b6f.md` (Integral thylakoid redox sensor)
+- **Created Concept Notes**:
+  - `wiki/concepts/PI3K-Akt-mTOR Signaling Pathway.md` (Signaling hierarchy & oncogenic dysregulation)
+- **Created Synthesis Note**:
+  - `wiki/syntheses/Allosteric Drug Discovery & Conformational Selection in Kinases.md`
+- **Catalog Update**: Updated `wiki/index.md` with new entities, concepts, and syntheses.
+- **Key Takeaway**: Bridged molecular signaling networks with physical conformational sampling (AF2 disorder, enhanced MD, MSMs, and ensemble docking) for allosteric kinase targeting.
