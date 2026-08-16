@@ -31,6 +31,10 @@ Welcome to the **Computational Structural Biology LLM Wiki**. This catalog provi
 * [[Contact Map Analysis]] — Pairwise $C_\alpha$ Euclidean distance matrices, contact definitions, and tertiary topology patterns.
 * [[Thylakoid State Transitions]] — Molecular mechanisms of redox-dependent LHCII migration between PSII and PSI.
 * [[Structural Superposition & RMSD]] — Kabsch SVD algorithm for rigid-body 3D alignment and root-mean-square deviation.
+* [[Molecular Dynamics & Enhanced Sampling]] — Force field potential energy functions, Newton integrators, Metadynamics, REMD, and Martini coarse-graining.
+* [[Molecular Docking Principles]] — Conformational search algorithms (Lamarckian GA), empirical scoring functions, and ensemble docking.
+* [[Markov State Models]] — Transition probability matrices, tICA dimensionality reduction, implied timescales, and macrostate kinetics.
+* [[De Novo Protein Design]] — Generative backbone diffusion (RFdiffusion), sequence inverse folding (ProteinMPNN), and self-consistency AF2 validation.
 
 ---
 
@@ -42,8 +46,9 @@ Welcome to the **Computational Structural Biology LLM Wiki**. This catalog provi
 ---
 
 ## 📚 Sources
-*Structured summaries of ingested projects and raw documents.*
+*Structured summaries of ingested projects, tutorials, and raw documents.*
 
 * [[Source - AKT1 Kinase Modeling Project]] — Structural analysis of TNBC hub kinase AKT1 using ColabFold AF2, pLDDT, Ramachandran vectors, and contact matrices.
 * [[Source - STN7-STN8 Docking Project]] — Evolutionary ortholog alignment, AF2 structural retrieval, SVD superposition, and hydrophobicity profiling of chloroplast thylakoid kinases.
 * [[Source - Bioinformatics Starter Kit]] — Command-line utilities for genomic translation, mutation analysis, RCSB PDB parsing, and 3D Euclidean distances.
+* [[Source - Structural Bioinformatics Course Curriculum]] — Advanced master's curriculum covering biomolecular simulations, enhanced sampling, MSMs, docking, and de novo protein design.

@@ -42,3 +42,18 @@ Chronological audit ledger of all knowledge base operations (ingestion, major sy
   - `wiki/syntheses/Comparative Kinase Mechanics - AKT1 vs STN7-STN8.md`
 - **Catalog Update**: Updated `wiki/index.md` with full categorized links and cross-references.
 - **Key Takeaway**: Compiled repository codebases into an interlinked knowledge graph spanning cancer hub kinase dynamics, chloroplast thylakoid state transitions, and structural bioinformatics algorithms.
+
+---
+
+## [2026-08-17] ingest | Structural Bioinformatics Course Curriculum
+- **Ingested Directory**: `Structural Biology Tutorials/Structural-Bioinformatics/`
+- **Created Source Notes**:
+  - `wiki/sources/Source - Structural Bioinformatics Course Curriculum.md`
+- **Created Concept Notes**:
+  - `wiki/concepts/Molecular Dynamics & Enhanced Sampling.md`
+  - `wiki/concepts/Molecular Docking Principles.md`
+  - `wiki/concepts/Markov State Models.md`
+  - `wiki/concepts/De Novo Protein Design.md`
+- **Cross-Updated**:
+  - Linked new concepts to `[[AlphaFold2]]`, `[[AKT1]]`, `[[STN7]]`, `[[STN8]]`, and updated `wiki/index.md`.
+- **Key Takeaway**: Integrated foundational physical and machine-learning frameworks (force fields, metadynamics, MSMs, Lamarckian docking, RFdiffusion, and ProteinMPNN) into the compiled knowledge base.
