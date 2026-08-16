@@ -19,3 +19,6 @@ __pycache__/
 # OS
 Thumbs.db
 ehtplugins.ini
+
+# Obsidian
+.obsidian/
