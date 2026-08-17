@@ -122,3 +122,11 @@ Chronological audit ledger of all knowledge base operations (ingestion, major sy
   - `[[Kinase Activation Loop & Allostery]]`: Added specific plant non-canonical motif variations.
   - `[[Source - STN7-STN8 Docking Project]]`: Added full manuscript conclusions and virtual screening workflow.
 - **Key Takeaway**: Integrated empirical manuscript discoveries and automated virtual screening pipeline into core entity and source files.
+
+---
+
+## [2026-08-17] documentation | Obsidian & LLM Wiki Integration Guide
+- **Created Synthesis**:
+  - `wiki/syntheses/Obsidian & LLM Wiki Integration Guide.md`
+- **Catalog Update**: Added guide to `wiki/index.md`.
+- **Key Takeaway**: Comprehensive manual documenting the three-layer architecture, file taxonomy, graph visual navigation, and compounding workflows.

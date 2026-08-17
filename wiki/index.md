@@ -60,6 +60,7 @@ Welcome to the **Computational Structural Biology LLM Wiki**. This catalog provi
 * [[Network to Structure - From WGCNA Hubs to Allosteric Kinase Inhibitors]] — Complete multi-scale paradigm connecting transcriptomic network hubs to atomic structure dynamics and drug design.
 * [[Structural Biology Methods - Experimental Cryo-EM and X-Ray vs Deep Learning AF2]] — Comprehensive comparative analysis of experimental Cryo-EM/X-ray methods with deep learning prediction.
 * [[Thylakoid Phosphorylation Dynamics - STN7-TAP38 Circuit vs STN8 Repair]] — Deep-dive synthesis of redox-driven state transitions vs high-light PSII damage repair circuits.
+* [[Obsidian & LLM Wiki Integration Guide]] — Complete architectural manual, file taxonomy, Obsidian UI workflows, and compounding knowledge management.
 
 ---
 
