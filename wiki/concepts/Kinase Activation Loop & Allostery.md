@@ -32,9 +32,12 @@ Inactive (DFG-out / Autoinhibited)  ◄═════════════�
 1. **DFG-in vs DFG-out**:
    * **DFG-in**: Active state; the conserved Aspartate points into the ATP active site to coordinate catalytic divalent cations ($\text{Mg}^{2+}$).
    * **DFG-out**: Inactive/inhibited state; the Aspartate flips away, displacing Phe into the ATP cleft.
-2. **Phosphorylation-Driven Stabilization**:
+   * **Non-Canonical Variations**: While [[STN8]] maintains the canonical `DFG` motif, its paralog [[STN7]] possesses a non-canonical **`DLG`** motif ($\text{Phe} \rightarrow \text{Leu}$ substitution) that modulates catalytic dynamics and metal chelation.
+2. **Substrate-Anchoring (APE vs PPE Motif)**:
+   * Anchors the C-terminal segment of the activation loop. While standard kinases and [[STN7]] use `APE`, [[STN8]] features a **`PPE`** proline-substituted variant.
+3. **Phosphorylation-Driven Stabilization**:
    * Phosphorylation of specific serine, threonine, or tyrosine residues within the activation loop (e.g., Thr308 in [[AKT1]]) creates electrostatic networks with arginine residues in the $\alpha\text{C}$-helix and catalytic loop, locking the loop into an open, active conformation.
-3. **Autoinhibitory Domain Allostery**:
+4. **Autoinhibitory Domain Allostery**:
    * In [[AKT1]], the Pleckstrin Homology (PH) domain clamps over the catalytic cleft ("PH-in" closed conformation) preventing access until membrane binding of $\text{PIP}_3$ allosterically dislodges the PH domain ("PH-out" open state).
 
 ---

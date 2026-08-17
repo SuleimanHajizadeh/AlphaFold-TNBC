@@ -43,10 +43,21 @@ LHCII detaches from PSII and migrates to PSI (State 2 Transition)
 
 ## 🔬 Structural & Computational Characteristics
 
-* **Evolutionary Conservation**: Orthologs are conserved across green algae (*Chlamydomonas reinhardtii*), monocots (*Oryza sativa*, *Zea mays*), and dicots (*Arabidopsis thaliana*).
-* **Paralog Relationship with [[STN8]]**: Displays **36.12%** pairwise sequence identity with paralog STN8 in *A. thaliana*, arising from an ancient gene duplication event.
-* **Catalytic Domain**: Contains a highly structured stromal catalytic core (mean [[Local Distance Difference Test (LDDT & pLDDT)|pLDDT]] $\approx 85$) superimposed with STN8 across 173 $C_\alpha$ positions with an RMSD of **4.25 Å**.
-* **Membrane Anchor**: Lacks a classical deep transmembrane $\alpha$-helix (maximum Kyte-Doolittle hydrophobicity score = **1.49**, window $w=19$), exhibiting an atypical peripheral/loop membrane association mode.
+* **Evolutionary Conservation**: Orthologs are conserved across green algae (*Chlamydomonas reinhardtii* STT7: `Q84V18`), monocots (*Oryza sativa* `B9FLG7`, *Zea mays* `A0A3L6E9I0`), and dicots (*Arabidopsis thaliana* `Q9S713`).
+  * High dicot-monocot ortholog conservation: **73.78%** identity between *A. thaliana* and rice.
+* **Paralog Relationship with [[STN8]]**: Displays **36.12%** pairwise sequence identity with *A. thaliana* STN8, arising from an ancient gene duplication event.
+* **Conserved & Divergent Kinase Motifs**:
+  * **ATP-Binding G-Loop (P-loop)**: Canonical `GEGSFG` (residues 141-146 in Arabidopsis).
+  * **Catalytic Base Loop (HRD Motif)**: Perfectly conserved `HRD` (residues 277-279, with Asp-279 acting as the proton acceptor).
+  * **Non-Canonical Activation Loop**: Features a non-canonical **`DLG`** motif (residues 295-297). The key $\text{Phe} \rightarrow \text{Leu}$ ($F \rightarrow L$) substitution influences metal coordination and is an evolutionary signature of STN7.
+  * **Substrate-Binding APE Motif**: Canonical `APE` motif (residues 324-326).
+* **Domain Confidence & Secondary Structure (AlphaFold v6)**:
+  * Overall Mean [[Local Distance Difference Test (LDDT & pLDDT)|pLDDT]]: **69.98** vs Kinase Domain Mean pLDDT: **84.46** ($t = 29.32, p = 1.96 \times 10^{-102}$, Student's t-test).
+  * Secondary structure (Kinase domain): **58.6%** $\alpha$-helix, **31.3%** $\beta$-strand, **10.0%** coil.
+* **Membrane Anchor**: Lacks a canonical transmembrane helix (maximum Kyte-Doolittle hydrophobicity = **1.49** at residues 83-101, $w=19$), exhibiting an atypical peripheral/loop membrane association mode.
+* **ColabFold Heterodimer Complex with [[STN8]]**:
+  * Forms a putative heterodimer interface with 2,190 inter-chain contacts ($d \leq 6\text{ Å}$), with 66.7% (375/562) of STN7 residues participating in the contact zone.
+  * Displays low inter-chain PAE ($< 10\text{ Å}$) across residues 100–130.
 
 ---
 

@@ -110,3 +110,15 @@ Chronological audit ledger of all knowledge base operations (ingestion, major sy
   - `wiki/syntheses/Thylakoid Phosphorylation Dynamics - STN7-TAP38 Circuit vs STN8 Repair.md`
 - **Catalog Update**: Fully updated `wiki/index.md` (now containing 44 total interlinked pages).
 - **Key Takeaway**: Comprehensive mapping of kinase regulatory networks, biophysical experimental standards, and plant photosynthetic photoprotection circuitry.
+
+---
+
+## [2026-08-17] ingest & refinement | STN7-STN8 Manuscript Findings & AutoDock Vina Pipeline
+- **Ingested Manuscript & Code**:
+  - `projects/stn7-stn8-docking/manuscript/manuscript_draft.md`
+  - `projects/stn7-stn8-docking/scripts/docking/` (`prepare_receptor.py`, `run_vina_docking.py`, `analyze_docking.py`)
+- **Updated Notes**:
+  - `[[STN7]]` & `[[STN8]]`: Enriched with exact motif signatures (non-canonical `DLG` vs `DFG`, `APE` vs `PPE`, `GEGSFG`, `HRD`), domain pLDDT $t$-test values ($p < 10^{-40}$), secondary structure fractions, and ColabFold multimer heterodimer contact interface (2,190 contacts).
+  - `[[Kinase Activation Loop & Allostery]]`: Added specific plant non-canonical motif variations.
+  - `[[Source - STN7-STN8 Docking Project]]`: Added full manuscript conclusions and virtual screening workflow.
+- **Key Takeaway**: Integrated empirical manuscript discoveries and automated virtual screening pipeline into core entity and source files.
